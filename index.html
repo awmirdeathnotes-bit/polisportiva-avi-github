@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Polisportiva A.V.I. Vipiteno – Scuola Nuoto Federale FIN</title>
+<meta name="description" content="Corsi di nuoto per bebè, bambini e adulti, acquafitness e squadra agonistica al Balneum di Vipiteno. Prenota online in italiano, tedesco e inglese.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10243A; --ink-2:#34495E; --muted:#56697B; --bg:#F4F8FA; --surface:#FFFFFF; --deck:#E7F0F5; --line:#D3E0E8;
+  --pool:#17719F; --pool-deep:#0E5682; --shallow:#9ED8EC; --red:#D7263D; --yellow:#F6C324; --ok:#1F8A5B;
+  --on-pool:#FFFFFF; --focus:#F6C324;
+  --fd:'Big Shoulders Display','Arial Narrow','Roboto Condensed',Impact,sans-serif;
+  --fb:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --wrap:1180px; --gut:clamp(16px,4vw,40px);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#E4EEF5; --ink-2:#BFD0DD; --muted:#93A8B9; --bg:#0A1826; --surface:#102336; --deck:#0D1F31; --line:#1E3850;
+    --pool:#135F87; --pool-deep:#0B4566; --shallow:#5DB4D4;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E4EEF5; --ink-2:#BFD0DD; --muted:#93A8B9; --bg:#0A1826; --surface:#102336; --deck:#0D1F31; --line:#1E3850;
+  --pool:#135F87; --pool-deep:#0B4566; --shallow:#5DB4D4;
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px);-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:1.0625rem;line-height:1.55}
+img,svg{max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gut)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--yellow);color:#10243A;padding:8px 12px;z-index:100;border-radius:6px}
+.skip:focus{left:8px}
+h1,h2,.display{font-family:var(--fd);font-weight:900;line-height:.92;letter-spacing:.004em;margin:0}
+h2{font-weight:800;font-size:clamp(2.2rem,5.2vw,3.5rem)}
+h3{font-size:1.2rem;font-weight:600;margin:0 0 .3em;line-height:1.3}
+p{margin:0 0 1em;max-width:66ch}
+.lead{font-size:clamp(1.08rem,1.6vw,1.25rem);color:var(--ink-2);max-width:58ch}
+.muted{color:var(--muted)}
+.tnum{font-variant-numeric:tabular-nums}
+.sec{padding-block:clamp(56px,8vw,104px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.sec-head p{margin:.6em 0 0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;border:2px solid transparent;font-weight:600;text-decoration:none;cursor:pointer;background:none;line-height:1.1;white-space:nowrap}
+.btn-go{background:var(--yellow);color:#10243A}
+.btn-go:hover{background:#FFD54F}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--bg)}
+.btn-ghost{color:var(--ink);padding-inline:10px}
+.btn-wait{background:transparent;border-color:var(--red);color:var(--red)}
+.btn-wait:hover{background:var(--red);color:#fff}
+.btn-sm{min-height:38px;padding:6px 14px;font-size:.95rem}
+.link{font-weight:600;text-underline-offset:3px}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;gap:20px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.brand-t{font-family:var(--fd);font-weight:800;font-size:1.45rem;line-height:.9}
+.brand-t small{display:block;font-family:var(--fb);font-weight:500;font-size:.72rem;letter-spacing:.01em;color:var(--muted);margin-top:3px}
+.nav{display:flex;gap:2px;margin-left:auto}
+.nav a{white-space:nowrap;padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:500;font-size:.98rem;color:var(--ink-2)}
+.nav a:hover{background:var(--deck);color:var(--ink)}
+.nav a[aria-current="page"]{color:var(--ink);box-shadow:inset 0 -3px 0 var(--red)}
+.langs{display:flex;border:1.5px solid var(--line);border-radius:999px;padding:2px;flex-shrink:0}
+.langs button{border:0;background:none;padding:5px 9px;border-radius:999px;font-weight:600;font-size:.85rem;cursor:pointer;color:var(--muted);min-width:36px;min-height:32px}
+.langs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.menu-btn{display:none;margin-left:auto;border:0;background:none;padding:8px;cursor:pointer;min-width:44px;min-height:44px}
+@media (max-width:1060px){.nav,.top .btn-go,.top .fam{display:none}.menu-btn{display:inline-flex;align-items:center;justify-content:center}.langs{margin-left:auto}.menu-btn{margin-left:4px}}
+.sheet{position:fixed;inset:0;z-index:60;background:var(--bg);padding:calc(env(safe-area-inset-top,0px) + 12px) var(--gut) calc(env(safe-area-inset-bottom,0px) + 24px);display:none;flex-direction:column;overflow:auto}
+.sheet.open{display:flex}
+.sheet-top{display:flex;justify-content:space-between;align-items:center;height:56px}
+.sheet nav a{display:block;font-family:var(--fd);font-weight:800;font-size:2.3rem;padding:8px 0;text-decoration:none;border-bottom:1px solid var(--line)}
+.sheet .btn{margin-top:20px;width:100%}
+
+/* hero: the pool */
+.deck{background:var(--deck);padding-top:clamp(36px,6vw,72px);padding-bottom:28px}
+.hero-h{font-size:clamp(3.1rem,10.5vw,7.6rem);max-width:12ch}
+.hero-sub{margin-top:22px}
+.pool{position:relative;background:var(--pool);color:var(--on-pool);overflow:hidden;isolation:isolate}
+.pool::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.55;
+  background:
+   radial-gradient(60% 40% at 18% 30%,rgba(158,216,236,.35),transparent 70%),
+   radial-gradient(50% 50% at 80% 70%,rgba(158,216,236,.25),transparent 70%),
+   repeating-linear-gradient(0deg,rgba(255,255,255,.07) 0 1px,transparent 1px 26px),
+   repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,transparent 1px 26px)}
+.pool-cap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:14px;font-size:.95rem;color:rgba(255,255,255,.86)}
+.rope{height:10px;position:relative;
+  background:
+   radial-gradient(circle at 7px 5px,var(--red) 0 4.4px,transparent 5px) 0 0/28px 10px repeat-x,
+   radial-gradient(circle at 21px 5px,var(--yellow) 0 4.4px,transparent 5px) 0 0/28px 10px repeat-x,
+   linear-gradient(transparent 4px,rgba(255,255,255,.55) 4px 6px,transparent 6px);
+  transform-origin:left center}
+.lanes{list-style:none;margin:0;padding:0}
+.lane{position:relative}
+.lane a{display:grid;grid-template-columns:clamp(46px,7vw,84px) 1fr auto;align-items:center;gap:clamp(10px,2vw,24px);padding:clamp(14px,2.4vw,22px) 0;text-decoration:none;color:inherit;position:relative}
+.lane a::after{content:"";position:absolute;left:52%;right:3%;top:50%;height:7px;margin-top:-3px;background:rgba(6,32,52,.32);border-radius:2px;z-index:-1}
+.lane a::before{content:"";position:absolute;right:3%;top:50%;width:7px;height:34px;margin-top:-17px;background:rgba(6,32,52,.32);border-radius:2px;z-index:-1}
+.lane:nth-child(even){background:rgba(255,255,255,.035)}
+.lane-n{font-family:var(--fd);font-weight:900;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1;color:rgba(255,255,255,.9);text-align:center}
+.lane-t{font-family:var(--fd);font-weight:800;font-size:clamp(1.55rem,3.6vw,2.5rem);line-height:1}
+.lane-m{display:block;font-family:var(--fb);font-weight:500;font-size:.95rem;color:rgba(255,255,255,.88);margin-top:6px;line-height:1.35}
+.lane-go{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.14);transition:background .2s,transform .2s}
+.lane a:hover .lane-go,.lane a:focus-visible .lane-go{background:var(--yellow);color:#10243A;transform:translateX(3px)}
+.lane a:hover .lane-t{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;text-decoration-color:var(--yellow)}
+@media (prefers-reduced-motion:no-preference){
+  .pool.anim .rope{animation:stretch .9s cubic-bezier(.2,.8,.2,1) both}
+  .pool.anim .lanes li:nth-child(2) + .rope,.pool.anim .rope:nth-of-type(2){animation-delay:.06s}
+  @keyframes stretch{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+}
+.facts-band{background:var(--surface);border-bottom:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.facts div{padding:22px clamp(12px,2vw,24px) 22px 0;border-right:1px solid var(--line);font-weight:500;line-height:1.35}
+.facts div:last-child{border-right:0}
+.facts div+div{padding-left:clamp(12px,2vw,24px)}
+.facts b{display:block;font-family:var(--fd);font-weight:800;font-size:1.65rem;line-height:1;margin-bottom:6px;color:var(--pool-deep)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .facts b{color:var(--shallow)}}
+:root[data-theme="dark"] .facts b{color:var(--shallow)}
+@media (max-width:820px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(2){border-right:0}.facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}.facts div:nth-child(3){padding-left:0}}
+@media (max-width:700px){.lane a::after,.lane a::before{display:none}}
+@media (max-width:520px){.brand-t small{display:none}.brand-t{font-size:1.2rem}.brand svg{width:34px;height:34px}.top-in{gap:8px}.langs button{min-width:30px;padding:4px 6px}.menu-btn{min-width:40px;padding:6px}}
+
+/* heat sheet */
+.heat{border-top:2px solid var(--ink)}
+.heat-h,.heat-r{display:grid;grid-template-columns:minmax(0,2.3fr) minmax(0,1.5fr) minmax(0,.8fr) minmax(0,1.25fr) minmax(0,.6fr) auto;gap:16px;align-items:center}
+.heat-h{padding:10px 0;font-size:.85rem;font-weight:600;color:var(--muted);border-bottom:1px solid var(--line)}
+.heat-r{padding:16px 0;border-bottom:1px solid var(--line)}
+.heat-r:hover{background:linear-gradient(90deg,transparent,var(--deck) 6%,var(--deck) 94%,transparent)}
+.c-name{font-weight:600;line-height:1.3}
+.c-name small{display:block;font-weight:500;color:var(--muted);font-size:.88rem;margin-top:2px}
+.c-when b{font-family:var(--fd);font-weight:800;font-size:1.35rem;line-height:1;display:block}
+.c-when span{font-size:.88rem;color:var(--muted)}
+.c-price{font-family:var(--fd);font-weight:800;font-size:1.45rem}
+.beads{display:flex;gap:3px;margin-bottom:5px}
+.beads i{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--ink-2);display:block}
+.beads i.f{background:var(--ink-2)}
+.beads.full i{border-color:var(--red);background:var(--red)}
+.spots{font-size:.88rem;font-weight:600}
+.spots.low{color:var(--red)}
+.tag{display:inline-block;font-size:.78rem;font-weight:600;padding:2px 8px;border-radius:6px;background:var(--deck);color:var(--ink-2);vertical-align:middle}
+@media (max-width:820px){
+  .heat-h{display:none}
+  .heat-r{grid-template-columns:1fr auto;grid-template-areas:"name price" "when when" "spots act";row-gap:10px}
+  .heat-r .c-name{grid-area:name}.heat-r .c-when{grid-area:when;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .heat-r .c-age{display:none}.heat-r .c-spots{grid-area:spots}.heat-r .c-price{grid-area:price;text-align:right}.heat-r .c-act{grid-area:act}
+}
+
+/* filters */
+.filters{display:flex;flex-direction:column;gap:14px;margin:8px 0 26px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chips-l{white-space:nowrap;flex-shrink:0;font-weight:600;font-size:.92rem;color:var(--muted);min-width:76px}
+.chip{white-space:nowrap;flex-shrink:0;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 14px;cursor:pointer;font-weight:500;font-size:.95rem;min-height:40px}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+@media (max-width:640px){.chips{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;margin-inline:calc(var(--gut) * -1);padding-inline:var(--gut)}.chips-l{min-width:auto}}
+
+/* scoreboard */
+.board{background:#0B1C2C;color:#EAF3F8;border-radius:18px;overflow:hidden}
+.board-r{display:grid;grid-template-columns:minmax(120px,auto) 1fr;gap:clamp(14px,3vw,36px);padding:clamp(18px,3vw,28px) clamp(18px,3vw,32px);border-bottom:1px solid rgba(255,255,255,.08);align-items:center}
+.board-r:last-child{border-bottom:0}
+.time{font-family:var(--fd);font-weight:900;font-size:clamp(2.6rem,6vw,4rem);line-height:.9;color:var(--yellow);font-variant-numeric:tabular-nums}
+.board-r h3{font-size:1.1rem;margin-bottom:4px}
+.board-r p{margin:0;color:#B8CBD8;font-size:.95rem}
+.split{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(28px,5vw,64px);align-items:start}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+
+/* news list */
+.news{border-top:2px solid var(--ink)}
+.news a{display:grid;grid-template-columns:120px 1fr auto;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none;align-items:baseline}
+.news a:hover h3{text-decoration:underline;text-underline-offset:4px}
+.news time{font-weight:600;color:var(--muted);font-size:.92rem}
+.news p{margin:.2em 0 0;color:var(--ink-2);font-size:.98rem}
+@media (max-width:640px){.news a{grid-template-columns:1fr}.news .tag{justify-self:start}}
+
+/* place */
+.place{display:grid;grid-template-columns:1.1fr 1fr;gap:0;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.place-map{background:var(--pool);min-height:280px;position:relative}
+.place-in{padding:clamp(22px,4vw,40px)}
+.place-in dl{margin:18px 0 0;display:grid;gap:14px}
+.place-in dt{font-size:.85rem;font-weight:600;color:var(--muted)}
+.place-in dd{margin:0;font-weight:500}
+@media (max-width:820px){.place{grid-template-columns:1fr}}
+
+/* footer */
+.foot{background:#0B1C2C;color:#CFE0EA;padding-top:0;margin-top:0}
+.foot .rope{height:10px}
+.foot-g{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;padding-block:44px}
+.foot h4{margin:0 0 12px;font-size:.95rem;color:#fff}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.foot a{text-decoration:none;color:#CFE0EA}
+.foot a:hover{color:#fff;text-decoration:underline}
+.foot-b{border-top:1px solid rgba(255,255,255,.1);padding-block:18px;font-size:.88rem;color:#93A8B9;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:820px){.foot-g{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot-g{grid-template-columns:1fr}}
+
+/* page head */
+.ph{background:var(--deck);padding-block:clamp(40px,6vw,72px) 32px}
+.ph h1{font-size:clamp(2.8rem,8vw,5.6rem);max-width:14ch}
+.ph .lead{margin-top:16px}
+.crumb{font-size:.9rem;color:var(--muted);margin-bottom:14px}
+.crumb a{color:var(--muted)}
+
+/* steps / levels */
+.levels{list-style:none;margin:0;padding:0;counter-reset:lv;display:grid;gap:0;border-top:2px solid var(--ink)}
+.levels li{display:grid;grid-template-columns:80px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.levels li::before{counter-increment:lv;content:counter(lv);font-family:var(--fd);font-weight:900;font-size:3rem;line-height:.9;color:var(--pool)}
+.levels p{margin:0}
+.bring{columns:2;column-gap:32px;padding-left:1.1em;margin:0}
+.bring li{margin-bottom:8px;break-inside:avoid}
+details{border-bottom:1px solid var(--line);padding:4px 0}
+summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--fd);font-size:1.6rem;line-height:.8}
+details[open] summary::after{content:"–"}
+details p{color:var(--ink-2)}
+.note{font-size:.9rem;color:var(--muted);border-left:3px solid var(--yellow);padding:4px 0 4px 12px;margin-top:20px}
+
+/* staff */
+.staff{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0;border-top:1px solid var(--line)}
+.person{display:flex;gap:14px;align-items:flex-start;padding:18px 12px 18px 0;border-bottom:1px solid var(--line)}
+.av{width:52px;height:52px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-family:var(--fd);font-weight:800;font-size:1.3rem;color:#fff;background:var(--pool)}
+.person:nth-child(3n+2) .av{background:var(--pool-deep)}
+.person:nth-child(3n) .av{background:#2E8FBF}
+.person h3{font-size:1.02rem;margin:2px 0 4px}
+.roles{display:flex;flex-wrap:wrap;gap:4px}
+
+table.t{width:100%;border-collapse:collapse;font-size:.98rem}
+.t th{text-align:left;font-size:.85rem;color:var(--muted);font-weight:600;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+.t td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.t-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.8rem;font-weight:600}
+.pill.ok{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.pill.rv{background:color-mix(in srgb,var(--yellow) 30%,transparent);color:#7A5B00}
+.pill.no{background:color-mix(in srgb,var(--red) 14%,transparent);color:var(--red)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pill.rv{color:var(--yellow)}}
+:root[data-theme="dark"] .pill.rv{color:var(--yellow)}
+
+/* forms */
+.form{display:grid;gap:16px}
+.form-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){.form-2{grid-template-columns:1fr}}
+label.f{display:grid;gap:6px;font-weight:600;font-size:.95rem}
+label.f span.h{font-weight:400;color:var(--muted);font-size:.86rem}
+.inp{width:100%;min-height:46px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);font-weight:400}
+textarea.inp{min-height:110px;resize:vertical}
+.inp:focus{border-color:var(--pool);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--pool) 25%,transparent)}
+.inp[aria-invalid="true"]{border-color:var(--red)}
+.err{color:var(--red);font-size:.88rem;font-weight:500;min-height:0}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.95rem}
+.check input{width:20px;height:20px;margin-top:2px;flex-shrink:0;accent-color:var(--pool)}
+.warn{background:color-mix(in srgb,var(--yellow) 22%,transparent);border-radius:10px;padding:10px 12px;font-size:.93rem}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:80;display:none;align-items:flex-end;justify-content:center;background:rgba(6,20,32,.55)}
+.modal.open{display:flex}
+.dialog{background:var(--bg);width:min(680px,100%);max-height:calc(100% - env(safe-area-inset-top,0px) - 12px);overflow:auto;border-radius:22px 22px 0 0;padding:20px var(--gut) calc(env(safe-area-inset-bottom,0px) + 24px)}
+@media (min-width:720px){.modal{align-items:center}.dialog{border-radius:22px;max-height:88vh;padding:28px 34px}}
+.dlg-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:6px}
+.dlg-top h2{font-size:clamp(1.9rem,5vw,2.6rem)}
+.x{border:0;background:var(--deck);width:44px;height:44px;border-radius:50%;cursor:pointer;display:grid;place-items:center;flex-shrink:0}
+.stepper{display:flex;gap:6px;margin:14px 0 22px;list-style:none;padding:0}
+.stepper li{flex:1;font-size:.8rem;font-weight:600;color:var(--muted)}
+.stepper li::before{content:"";display:block;height:5px;border-radius:3px;background:var(--line);margin-bottom:6px}
+.stepper li.on{color:var(--ink)}
+.stepper li.on::before{background:var(--pool)}
+.stepper li.done::before{background:var(--ink-2)}
+.dlg-actions{display:flex;justify-content:space-between;gap:12px;margin-top:24px;flex-wrap:wrap}
+.sumbox{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.dates{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.dates span{font-size:.82rem;padding:3px 8px;border-radius:6px;background:var(--deck)}
+.dates span.past{opacity:.45;text-decoration:line-through}
+.pay{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pay label{display:flex;gap:10px;align-items:center;border:1.5px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;font-weight:600;background:var(--surface)}
+.pay label:has(input:checked){border-color:var(--pool);box-shadow:0 0 0 3px color-mix(in srgb,var(--pool) 20%,transparent)}
+.pay input{accent-color:var(--pool);width:18px;height:18px}
+.done-mark{width:64px;height:64px;border-radius:50%;background:var(--ok);display:grid;place-items:center;color:#fff;margin-bottom:14px}
+
+/* toast + cookie + mobile bar */
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 86px);transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:12px;z-index:90;font-weight:500;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:calc(100% - 32px);display:none}
+.toast.show{display:block}
+.cookie{position:fixed;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);z-index:70;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 12px 40px rgba(6,20,32,.18);display:flex;gap:14px;align-items:center;flex-wrap:wrap;max-width:760px;margin:0 auto}
+.cookie p{margin:0;flex:1 1 320px;font-size:.95rem}
+.mbar{display:none}
+@media (max-width:1060px){
+  .mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;gap:10px;padding:10px var(--gut) calc(env(safe-area-inset-bottom,0px) + 10px);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mbar .btn{flex:1}
+  body{padding-bottom:72px}
+}
+.proto{background:var(--yellow);color:#10243A;font-size:.85rem;font-weight:600;text-align:center;padding:6px 12px}
+
+/* admin */
+.adm{display:grid;grid-template-columns:230px 1fr;gap:0;min-height:70vh;border-top:1px solid var(--line)}
+.adm-side{border-right:1px solid var(--line);padding:22px 16px;background:var(--surface)}
+.adm-side button{display:flex;width:100%;text-align:left;border:0;background:none;padding:11px 12px;border-radius:10px;font-weight:600;cursor:pointer;color:var(--ink-2);min-height:44px;align-items:center}
+.adm-side button[aria-pressed="true"]{background:var(--deck);color:var(--ink);box-shadow:inset 3px 0 0 var(--red)}
+.adm-main{padding:clamp(18px,3vw,34px);min-width:0}
+.adm>*,.adm-grid>*,.split>*{min-width:0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 28px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.kpi:first-child{border-radius:14px 14px 14px 4px}
+.kpi b{font-family:var(--fd);font-weight:900;font-size:2.4rem;line-height:1;display:block}
+.kpi span{font-size:.9rem;color:var(--muted);font-weight:500}
+.adm-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.panel h3{margin-bottom:12px}
+.occ{display:grid;gap:14px}
+.occ-row{display:grid;grid-template-columns:140px 1fr 56px;gap:12px;align-items:center;font-size:.93rem}
+.bar{height:12px;background:var(--deck);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:6px;background:repeating-linear-gradient(90deg,var(--red) 0 10px,var(--yellow) 10px 20px)}
+.alert{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.alert:last-child{border-bottom:0}
+.dot{width:10px;height:10px;border-radius:50%;margin-top:7px;flex-shrink:0;background:var(--red)}
+.dot.y{background:var(--yellow)}
+.tabs{display:flex;gap:6px;margin-bottom:10px}
+.tabs button{border:1.5px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 12px;font-weight:600;cursor:pointer;min-height:38px}
+.tabs button[aria-pressed="true"]{background:var(--pool);border-color:var(--pool);color:#fff}
+@media (max-width:980px){.adm{grid-template-columns:1fr}.adm-side{display:flex;overflow-x:auto;gap:6px;border-right:0;border-bottom:1px solid var(--line);padding:10px var(--gut)}.adm-side button{width:auto;white-space:nowrap}.adm-side h4{display:none}.adm-grid{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.occ-row{grid-template-columns:96px 1fr 44px}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+<div class="proto" id="proto" role="note"></div>
+<header class="top"><div class="wrap top-in" id="hdr"></div></header>
+<div class="sheet" id="sheet"></div>
+<main id="main" tabindex="-1"></main>
+<footer class="foot" id="ftr"></footer>
+<div class="mbar" id="mbar"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="dlgT"><div class="dialog" id="dlg"></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div id="cookie"></div>
+<script>
+const I18N = {
+it:{
+  _locale:"it-IT", _name:"Italiano",
+  skip:"Vai al contenuto", proto:"Prototipo del nuovo sito. Corsi tratti dal sito attuale (autunno 2026); posti e alcuni orari sono dimostrativi.",
+  nav_courses:"Corsi", nav_school:"Scuola nuoto", nav_team:"Squadra", nav_club:"Il club", nav_news:"Notizie", nav_contact:"Contatti", nav_admin:"Gestione",
+  cta_book:"Prenota un corso", fam:"Area famiglie", menu:"Menu", close:"Chiudi", home:"Home",
+  brand_sub:"Sezione nuoto, Vipiteno",
+  hero_h1:"Ogni età ha la sua corsia.",
+  hero_sub:"Scuola Nuoto Federale FIN al Balneum di Vipiteno. Scegli la tua corsia, trova il turno e iscriviti online in pochi minuti.",
+  pool_cap:"Scegli la tua corsia", pool_cap2:"Vasca da 25 m, Balneum",
+  lane_baby:"Bebè con mamma o papà", lane_kids:"Bambini e ragazzi dai 4\u00a0anni", lane_adults:"Adulti", lane_fitness:"Acquafitness", lane_private:"Lezioni private", lane_team:"Squadra agonistica",
+  lane_team_m:"Allenamenti, gare e selezioni per entrare in squadra", lane_private_m:"Un istruttore solo per te, buono valido 1 anno",
+  from:"da {p}", sessions:"{n} incontri", lessons:"{n} lezioni",
+  fact1:"Scuola Nuoto Federale", fact1t:"L'unica riconosciuta dalla FIN a Vipiteno e in Val d'Isarco",
+  fact2:"19 tecnici", fact2t:"Istruttori e allenatori con brevetto FIN",
+  fact3:"Balneum", fact3t:"Vasca sportiva da 25 metri, Piazza Karl Riedmann 5",
+  fact4:"80 anni", fact4t:"La Polisportiva A.V.I. festeggia 80 anni nel 2026",
+  courses_h:"Corsi d'autunno 2026", courses_sub:"Iscrizioni aperte. I posti liberi si aggiornano in tempo reale.",
+  col_course:"Corso", col_when:"Quando", col_age:"Età", col_spots:"Posti", col_price:"Prezzo",
+  signup:"Iscriviti", waitlist:"Lista d'attesa", spots_left:"{n} posti liberi", spot_left:"1 posto libero", full:"Completo",
+  left:"ancora {n} su {t}", ended:"Concluso", all_courses:"Vedi tutti i corsi", time_tbd:"orario da definire",
+  team_h:"Dalla scuola nuoto alla Nazionale.",
+  team_sub:"Marie Ungerank è stata convocata nella Nazionale Giovanile di nuoto in acque libere per la COMEN Cup di Malta, 9–11 ottobre 2026.",
+  captains:"Capitane della stagione 2026/27: Elina Hofer e Marie Ungerank.",
+  team_cta:"Scopri la squadra",
+  news_h:"Notizie", news_all:"Tutte le notizie",
+  where_h:"Ci trovi al Balneum", where_t:"Le lezioni si svolgono nella piscina coperta del Balneum, nel centro di Vipiteno.",
+  addr:"Indirizzo", phone:"Telefono", phone_h:"Mirja Ottaviani, pomeriggio 15–17", maps:"Apri in Google Maps", write:"Scrivici",
+  f_club:"Il club", f_info:"Informazioni", privacy:"Privacy", cookies:"Cookie", terms:"Condizioni di iscrizione", safeguarding:"Safeguarding", transparency:"Trasparenza contributi", docs:"Documenti e statuto",
+  f_legal:"ASD Polisportiva A.V.I. Vipiteno – Sezione Nuoto, C.F. 00701590218",
+  cookie_t:"Usiamo solo cookie tecnici. I contenuti di Instagram si caricano solo se lo scegli tu.", cookie_ok:"Accetta tutto", cookie_no:"Solo necessari",
+  courses_h1:"Corsi e iscrizioni", courses_intro:"Filtra per chi nuota e per giorno. Ogni turno mostra date, posti liberi e prezzo: niente sorprese.",
+  who:"Per chi", day:"Giorno", all:"Tutti", none:"Nessun corso con questi filtri.", reset:"Azzera i filtri",
+  b_title:"Iscrizione", st1:"Corso", st2:"Partecipante", st3:"Contatti", st4:"Pagamento",
+  b_dates:"Date del corso", b_left:"Lezioni rimanenti: {n}", b_total:"Totale",
+  b_first:"Nome", b_last:"Cognome", b_birth:"Data di nascita", b_level:"In acqua è…",
+  lvl1:"alla prima esperienza", lvl2:"a suo agio ma non galleggia da solo", lvl3:"autonomo, nuota qualche metro", lvl4:"sicuro, conosce almeno 2 stili",
+  b_notes:"Note per l'istruttore", b_notes_h:"Allergie, esigenze particolari, paure. Facoltativo.",
+  b_payer:"Nome e cognome del genitore o di chi paga", b_email:"Email", b_tel:"Cellulare", b_lang:"Lingua per le comunicazioni",
+  b_priv:"Ho letto l'informativa privacy e accetto le condizioni di iscrizione.", b_photo:"Acconsento a foto e video durante le attività (facoltativo).",
+  b_pay:"Metodo di pagamento", pay_card:"Carta", pay_pp:"PayPal", pay_sp:"Satispay", pay_bt:"Bonifico",
+  back:"Indietro", next:"Continua", pay_now:"Paga e conferma", join_wait:"Entra in lista d'attesa",
+  req:"Campo obbligatorio", bad_email:"Inserisci un'email valida, ad esempio nome@esempio.it",
+  age_warn:"L'età indicata non corrisponde a questo turno ({a}). Puoi continuare, oppure scegliere un altro turno.",
+  done_t:"Iscrizione confermata", done_w:"Sei in lista d'attesa",
+  done_p:"Abbiamo inviato conferma, date e ricevuta a {e}. Codice iscrizione: {c}.",
+  done_pw:"Ti scriviamo a {e} appena si libera un posto. Codice: {c}.",
+  add_cal:"Aggiungi al calendario", cal_toast:"Nel sito finale: file calendario con tutte le date.",
+  wait_note:"Il corso è completo: non paghi nulla ora. Se si libera un posto ti avvisiamo e hai 48 ore per confermare.",
+  fam_t:"Area famiglie", fam_p:"Nel sito finale ogni famiglia ha il suo spazio:", fam_1:"profili dei figli e iscrizioni attive", fam_2:"ricevute per la detrazione del 19% delle spese sportive (5–18 anni)", fam_3:"rinnovo con un clic e prelazione per la stagione successiva", fam_4:"avvisi su lezioni annullate e documenti da caricare",
+  school_h1:"Scuola nuoto", school_intro:"Un percorso a livelli, dalla prima volta in acqua alla tecnica dei quattro stili. Gruppi piccoli per età, istruttori brevettati dalla Federazione Italiana Nuoto.",
+  levels_h:"Il percorso",
+  l1:"Ambientamento", l1t:"Fiducia in acqua con il gioco: immergere il viso, soffiare, scivolare.",
+  l2:"Galleggiamento e respirazione", l2t:"Galleggiare a pancia in su e in giù, espirare in acqua con ritmo.",
+  l3:"Propulsione", l3t:"Gambe e braccia coordinate per i primi spostamenti senza aiuti.",
+  l4:"Stili", l4t:"Crawl e dorso, poi rana e farfalla. Prime virate.",
+  l5:"Perfezionamento", l5t:"Quattro stili, partenze e virate: il ponte verso la squadra agonistica.",
+  lv_note:"Percorso indicativo: nomi e contenuti dei livelli da confermare con il coordinamento della scuola nuoto.",
+  bring_h:"Prima lezione: cosa portare", bring:["Costume e cuffia","Occhialini","Ciabatte","Accappatoio o asciugamano","Shampoo e una bottiglietta d'acqua","Arriva 10 minuti prima"],
+  faq_h:"Domande frequenti",
+  q1:"Posso provare prima di iscrivermi?", a1:"Scrivici: se nel turno ci sono posti liberi ti proponiamo una data per conoscere istruttore e gruppo.",
+  q2:"Serve il certificato medico?", a2:"Per la squadra agonistica serve il certificato di idoneità agonistica. Per i corsi ti indichiamo i requisiti al momento dell'iscrizione, e puoi caricare i documenti nell'area famiglie.",
+  q3:"Come ottengo la ricevuta per la dichiarazione dei redditi?", a3:"La trovi nell'area famiglie subito dopo il pagamento, già intestata e valida per la detrazione delle spese sportive dei figli tra 5 e 18 anni.",
+  team_h1:"Squadra agonistica", team_intro:"Esordienti, categoria e assoluti si allenano tutto l'anno tra vasca corta e acque libere, con gare in Alto Adige, Trentino, Austria e ai campionati italiani.",
+  res_h:"Risultati recenti", search:"Cerca atleta o gara", join_h:"Vuoi entrare in squadra?", join_t:"Selezioni a settembre e gennaio per chi ha completato il percorso della scuola nuoto. Scrivici per una prova con gli allenatori.", join_cta:"Chiedi una prova",
+  ig:"Segui @polisportiva.sterzing.swimteam",
+  club_h1:"Il club", club_intro:"La Polisportiva A.V.I. compie 80 anni. La sezione nuoto è Scuola Nuoto Federale: per ottenere la licenza la FIN verifica requisiti, struttura e qualifiche dello staff, che si aggiorna ogni anno.",
+  staff_h:"Lo staff", s_all:"Tutti", s_coord:"Coordinamento", s_coach:"Allenatori", s_fit:"Acquafitness",
+  r_I:"Istruttore", r_I2:"Istruttore II liv.", r_I1:"Istruttore I liv.", r_A1:"Allenatore I liv.", r_A2:"Allenatore II liv.", r_AB:"Assistente bagnanti", r_C:"Coordinatore scuola nuoto", r_F:"Istruttore fitness in acqua", r_SIT:"Docente regionale SIT", r_ATL:"Istruttore atletica",
+  sg_h:"Safeguarding", sg_t:"Tutela di bambini e ragazzi da abusi, violenze e discriminazioni. Il responsabile safeguarding è il riferimento per famiglie, atleti e staff.",
+  sg_who:"Responsabile safeguarding", sg_cta:"Segnala in modo riservato", sg_docs:"Policy di tutela e codice di condotta (PDF)",
+  tr_h:"Trasparenza contributi pubblici", tr_t:"Contributi ricevuti da enti pubblici, pubblicati ai sensi della Legge 124/2017.",
+  tr_y:"Anno", tr_n:"Contributi", tr_tot:"Totale", tr_pdf:"Dettaglio PDF", tr_pend:"In pubblicazione",
+  news_h1:"Notizie", c_team:"Squadra", c_courses:"Corsi", c_club:"Club",
+  contact_h1:"Contatti", contact_intro:"Per corsi e iscrizioni chiama nel pomeriggio o scrivici: rispondiamo in italiano, tedesco o inglese.",
+  f_name:"Nome e cognome", f_topic:"Argomento", t_courses:"Corsi e iscrizioni", t_team:"Squadra agonistica", t_sg:"Safeguarding (riservato)", t_other:"Altro", f_msg:"Messaggio", f_send:"Invia messaggio", sent:"Messaggio inviato. Ti rispondiamo entro 2 giorni lavorativi.",
+  a_title:"Pannello di gestione", a_demo:"Anteprima con dati dimostrativi", a_ov:"Panoramica", a_courses:"Corsi", a_comm:"Comunicazioni", a_content:"Contenuti e lingue",
+  k1:"Iscritti autunno 2026", k2:"Posti occupati", k3:"In lista d'attesa", k4:"Incassi corsi",
+  occ_h:"Riempimento per corsia", chk_h:"Controlli automatici", chk_date:"{c}: il {d} non è {w}.", chk_ok:"Nessun altro problema rilevato.",
+  task_h:"Da fare oggi", task1:"3 certificati medici scadono entro 30 giorni", task2:"2 bonifici da verificare", task3:"Contributi 2025 da pubblicare nella pagina Trasparenza",
+  reg_h:"Ultime iscrizioni", reg_who:"Partecipante", reg_course:"Corso", reg_pay:"Pagamento", paid:"Pagato", pending:"In attesa",
+  c_new:"Nuovo corso", c_dup:"Duplica per la primavera 2027", c_dup_t:"Stagione duplicata: 28 corsi in bozza per la primavera 2027 (demo).",
+  c_new_t:"Crei il corso una sola volta: il sistema genera le date escludendo festività e chiusure del Balneum, e lo pubblica nelle tre lingue.",
+  c_type:"Tipo", c_daytime:"Giorno e ora", c_cap:"Capienza", c_book:"Iscritti", c_wait:"Attesa",
+  comm_h:"Avviso a un gruppo", comm_g:"Destinatari", comm_all:"Tutte le famiglie iscritte", comm_send:"Invia avviso", comm_tr:"Bozza automatica delle lingue mancanti",
+  comm_ex:"Giovedì 15/10 la vasca è chiusa per manutenzione: la lezione è rinviata al 22/12.",
+  comm_sent:"Avviso inviato a {n} contatti, ognuno nella sua lingua (demo).", comm_trd:"Bozze create: controllale prima di inviare.",
+  ct_h:"Stato delle traduzioni", ct_page:"Contenuto", ok:"Pubblicato", rv:"In revisione", miss:"Da tradurre",
+  roles_h:"Ruoli e permessi", roles_t:"Direttivo, segreteria, coordinamento, allenatori, redazione e istruttori vedono solo ciò che serve loro. Accesso con verifica in due passaggi."
+},
+de:{
+  _locale:"de-DE", _name:"Deutsch",
+  skip:"Zum Inhalt springen", proto:"Prototyp der neuen Website. Kurse von der aktuellen Seite (Herbst 2026); Plätze und einige Uhrzeiten sind Beispieldaten.",
+  nav_courses:"Kurse", nav_school:"Schwimmschule", nav_team:"Mannschaft", nav_club:"Verein", nav_news:"News", nav_contact:"Kontakt", nav_admin:"Verwaltung",
+  cta_book:"Kurs buchen", fam:"Familienbereich", menu:"Menü", close:"Schließen", home:"Start",
+  brand_sub:"Sektion Schwimmen, Sterzing",
+  hero_h1:"Für jedes Alter die richtige Bahn.",
+  hero_sub:"Föderale Schwimmschule des italienischen Schwimmverbands (FIN) im Balneum Sterzing. Bahn wählen, Termin finden und in wenigen Minuten online anmelden.",
+  pool_cap:"Wähle deine Bahn", pool_cap2:"25-m-Becken, Balneum",
+  lane_baby:"Babys mit Mama oder Papa", lane_kids:"Kinder und Jugendliche ab\u00a04", lane_adults:"Erwachsene", lane_fitness:"Wasserfitness", lane_private:"Privatstunden", lane_team:"Wettkampfmannschaft",
+  lane_team_m:"Training, Wettkämpfe und Sichtung für die Mannschaft", lane_private_m:"Ein:e Schwimmlehrer:in nur für dich, Gutschein 1 Jahr gültig",
+  from:"ab {p}", sessions:"{n} Termine", lessons:"{n} Einheiten",
+  fact1:"Föderale Schwimmschule", fact1t:"Die einzige vom FIN anerkannte in Sterzing und im Eisacktal",
+  fact2:"19 Fachkräfte", fact2t:"Schwimmlehrer:innen und Trainer:innen mit FIN-Lizenz",
+  fact3:"Balneum", fact3t:"25-m-Sportbecken, Karl-Riedmann-Platz 5",
+  fact4:"80 Jahre", fact4t:"Die Polisportiva A.V.I. feiert 2026 ihr 80-jähriges Bestehen",
+  courses_h:"Herbstkurse 2026", courses_sub:"Anmeldung offen. Freie Plätze werden laufend aktualisiert.",
+  col_course:"Kurs", col_when:"Wann", col_age:"Alter", col_spots:"Plätze", col_price:"Preis",
+  signup:"Anmelden", waitlist:"Warteliste", spots_left:"{n} Plätze frei", spot_left:"1 Platz frei", full:"Ausgebucht",
+  left:"noch {n} von {t}", ended:"Beendet", all_courses:"Alle Kurse ansehen", time_tbd:"Uhrzeit folgt",
+  team_h:"Von der Schwimmschule bis zur Nationalmannschaft.",
+  team_sub:"Marie Ungerank wurde in die italienische Jugend-Nationalmannschaft im Freiwasserschwimmen berufen: COMEN Cup in Malta, 9.–11. Oktober 2026.",
+  captains:"Kapitäninnen der Saison 2026/27: Elina Hofer und Marie Ungerank.",
+  team_cta:"Zur Mannschaft",
+  news_h:"News", news_all:"Alle News",
+  where_h:"Du findest uns im Balneum", where_t:"Der Unterricht findet im Hallenbad des Balneum im Zentrum von Sterzing statt.",
+  addr:"Adresse", phone:"Telefon", phone_h:"Mirja Ottaviani, nachmittags 15–17 Uhr", maps:"In Google Maps öffnen", write:"Schreib uns",
+  f_club:"Verein", f_info:"Infos", privacy:"Datenschutz", cookies:"Cookies", terms:"Anmeldebedingungen", safeguarding:"Safeguarding", transparency:"Transparenz Beiträge", docs:"Dokumente und Statut",
+  f_legal:"ASD Polisportiva A.V.I. Sterzing – Sektion Schwimmen, St.-Nr. 00701590218",
+  cookie_t:"Wir verwenden nur technische Cookies. Instagram-Inhalte werden nur geladen, wenn du zustimmst.", cookie_ok:"Alle akzeptieren", cookie_no:"Nur notwendige",
+  courses_h1:"Kurse und Anmeldung", courses_intro:"Filtere nach Teilnehmer:in und Wochentag. Jeder Termin zeigt Daten, freie Plätze und Preis.",
+  who:"Für wen", day:"Tag", all:"Alle", none:"Keine Kurse mit diesen Filtern.", reset:"Filter zurücksetzen",
+  b_title:"Anmeldung", st1:"Kurs", st2:"Teilnehmer:in", st3:"Kontakt", st4:"Zahlung",
+  b_dates:"Kurstermine", b_left:"Verbleibende Einheiten: {n}", b_total:"Gesamt",
+  b_first:"Vorname", b_last:"Nachname", b_birth:"Geburtsdatum", b_level:"Im Wasser ist das Kind…",
+  lvl1:"zum ersten Mal dabei", lvl2:"entspannt, schwimmt aber nicht allein", lvl3:"selbstständig, schwimmt ein paar Meter", lvl4:"sicher, kann mindestens 2 Lagen",
+  b_notes:"Hinweise für die Schwimmlehrer:in", b_notes_h:"Allergien, besondere Bedürfnisse, Ängste. Optional.",
+  b_payer:"Name des Elternteils bzw. der zahlenden Person", b_email:"E-Mail", b_tel:"Handy", b_lang:"Sprache für Mitteilungen",
+  b_priv:"Ich habe die Datenschutzerklärung gelesen und akzeptiere die Anmeldebedingungen.", b_photo:"Ich bin mit Fotos und Videos während der Aktivitäten einverstanden (optional).",
+  b_pay:"Zahlungsart", pay_card:"Karte", pay_pp:"PayPal", pay_sp:"Satispay", pay_bt:"Überweisung",
+  back:"Zurück", next:"Weiter", pay_now:"Bezahlen und bestätigen", join_wait:"Auf die Warteliste",
+  req:"Pflichtfeld", bad_email:"Bitte gültige E-Mail eingeben, z. B. name@beispiel.it",
+  age_warn:"Das Alter passt nicht zu diesem Termin ({a}). Du kannst fortfahren oder einen anderen Termin wählen.",
+  done_t:"Anmeldung bestätigt", done_w:"Du stehst auf der Warteliste",
+  done_p:"Bestätigung, Termine und Quittung gehen an {e}. Anmeldecode: {c}.",
+  done_pw:"Wir schreiben an {e}, sobald ein Platz frei wird. Code: {c}.",
+  add_cal:"Zum Kalender hinzufügen", cal_toast:"In der finalen Website: Kalenderdatei mit allen Terminen.",
+  wait_note:"Der Kurs ist ausgebucht: Du zahlst jetzt nichts. Wird ein Platz frei, hast du 48 Stunden zum Bestätigen.",
+  fam_t:"Familienbereich", fam_p:"In der finalen Website hat jede Familie ihren eigenen Bereich:", fam_1:"Profile der Kinder und aktive Anmeldungen", fam_2:"Quittungen für den Steuerabzug von 19 % der Sportausgaben (5–18 Jahre)", fam_3:"Verlängerung mit einem Klick und Vorrang für die nächste Saison", fam_4:"Hinweise zu ausgefallenen Einheiten und fehlenden Dokumenten",
+  school_h1:"Schwimmschule", school_intro:"Ein Stufenweg vom ersten Kontakt mit dem Wasser bis zur Technik aller vier Lagen. Kleine Gruppen nach Alter, Lehrkräfte mit Lizenz des italienischen Schwimmverbands.",
+  levels_h:"Der Weg",
+  l1:"Wassergewöhnung", l1t:"Vertrauen durch Spiel: Gesicht ins Wasser, ausatmen, gleiten.",
+  l2:"Schweben und Atmen", l2t:"In Bauch- und Rückenlage schweben, rhythmisch ins Wasser ausatmen.",
+  l3:"Fortbewegung", l3t:"Arme und Beine koordiniert für die ersten Meter ohne Hilfen.",
+  l4:"Lagen", l4t:"Kraul und Rücken, danach Brust und Delfin. Erste Wenden.",
+  l5:"Perfektion", l5t:"Vier Lagen, Starts und Wenden: die Brücke zur Wettkampfmannschaft.",
+  lv_note:"Beispielhafter Ablauf: Namen und Inhalte der Stufen werden mit der Leitung der Schwimmschule abgestimmt.",
+  bring_h:"Erste Stunde: Was mitbringen", bring:["Badeanzug bzw. Badehose und Badekappe","Schwimmbrille","Badeschlappen","Bademantel oder Handtuch","Shampoo und eine Trinkflasche","10 Minuten früher da sein"],
+  faq_h:"Häufige Fragen",
+  q1:"Kann ich vor der Anmeldung schnuppern?", a1:"Schreib uns: Sind im Termin Plätze frei, schlagen wir dir einen Tag vor, um Gruppe und Lehrkraft kennenzulernen.",
+  q2:"Braucht es ein ärztliches Zeugnis?", a2:"Für die Wettkampfmannschaft ist ein sportärztliches Attest für Wettkampfsport nötig. Für Kurse nennen wir dir die Voraussetzungen bei der Anmeldung; Dokumente lädst du im Familienbereich hoch.",
+  q3:"Wie erhalte ich die Quittung für die Steuererklärung?", a3:"Direkt nach der Zahlung im Familienbereich, ausgestellt für den Abzug der Sportausgaben von Kindern zwischen 5 und 18 Jahren.",
+  team_h1:"Wettkampfmannschaft", team_intro:"Anwärter, Kategorie und Allgemeine Klasse trainieren das ganze Jahr im Kurzbahnbecken und im Freiwasser, mit Wettkämpfen in Südtirol, im Trentino, in Österreich und bei den italienischen Meisterschaften.",
+  res_h:"Aktuelle Ergebnisse", search:"Athlet:in oder Wettkampf suchen", join_h:"Willst du in die Mannschaft?", join_t:"Sichtung im September und Jänner für alle, die den Weg der Schwimmschule abgeschlossen haben. Schreib uns für ein Probetraining.", join_cta:"Probetraining anfragen",
+  ig:"Folge @polisportiva.sterzing.swimteam",
+  club_h1:"Der Verein", club_intro:"Die Polisportiva A.V.I. wird 80. Die Sektion Schwimmen ist föderale Schwimmschule: Für die Lizenz prüft der FIN Voraussetzungen, Struktur und Qualifikationen des Teams, das sich jedes Jahr fortbildet.",
+  staff_h:"Das Team", s_all:"Alle", s_coord:"Leitung", s_coach:"Trainer:innen", s_fit:"Wasserfitness",
+  r_I:"Schwimmlehrer:in", r_I2:"Schwimmlehrer:in 2. Stufe", r_I1:"Schwimmlehrer:in 1. Stufe", r_A1:"Trainer:in 1. Stufe", r_A2:"Trainer:in 2. Stufe", r_AB:"Bademeister:in", r_C:"Leitung Schwimmschule", r_F:"Wasserfitness-Trainer:in", r_SIT:"Landesreferent:in SIT", r_ATL:"Leichtathletik-Instruktor:in",
+  sg_h:"Safeguarding", sg_t:"Schutz von Kindern und Jugendlichen vor Missbrauch, Gewalt und Diskriminierung. Der Safeguarding-Beauftragte ist Ansprechperson für Familien, Athlet:innen und Team.",
+  sg_who:"Safeguarding-Beauftragter", sg_cta:"Vertraulich melden", sg_docs:"Schutzkonzept und Verhaltenskodex (PDF)",
+  tr_h:"Transparenz öffentlicher Beiträge", tr_t:"Beiträge öffentlicher Körperschaften, veröffentlicht gemäß Gesetz 124/2017.",
+  tr_y:"Jahr", tr_n:"Beiträge", tr_tot:"Summe", tr_pdf:"Details als PDF", tr_pend:"Wird veröffentlicht",
+  news_h1:"News", c_team:"Mannschaft", c_courses:"Kurse", c_club:"Verein",
+  contact_h1:"Kontakt", contact_intro:"Für Kurse und Anmeldungen ruf nachmittags an oder schreib uns: Wir antworten auf Deutsch, Italienisch oder Englisch.",
+  f_name:"Vor- und Nachname", f_topic:"Thema", t_courses:"Kurse und Anmeldung", t_team:"Wettkampfmannschaft", t_sg:"Safeguarding (vertraulich)", t_other:"Sonstiges", f_msg:"Nachricht", f_send:"Nachricht senden", sent:"Nachricht gesendet. Wir antworten innerhalb von 2 Werktagen.",
+  a_title:"Verwaltung", a_demo:"Vorschau mit Beispieldaten", a_ov:"Übersicht", a_courses:"Kurse", a_comm:"Mitteilungen", a_content:"Inhalte und Sprachen",
+  k1:"Angemeldet Herbst 2026", k2:"Belegte Plätze", k3:"Auf der Warteliste", k4:"Kurseinnahmen",
+  occ_h:"Auslastung pro Bahn", chk_h:"Automatische Prüfungen", chk_date:"{c}: Der {d} ist kein {w}.", chk_ok:"Keine weiteren Probleme gefunden.",
+  task_h:"Heute zu tun", task1:"3 ärztliche Zeugnisse laufen in 30 Tagen ab", task2:"2 Überweisungen prüfen", task3:"Beiträge 2025 auf der Transparenz-Seite veröffentlichen",
+  reg_h:"Neueste Anmeldungen", reg_who:"Teilnehmer:in", reg_course:"Kurs", reg_pay:"Zahlung", paid:"Bezahlt", pending:"Offen",
+  c_new:"Neuer Kurs", c_dup:"Für Frühjahr 2027 kopieren", c_dup_t:"Saison kopiert: 28 Kurse als Entwurf für Frühjahr 2027 (Demo).",
+  c_new_t:"Der Kurs wird einmal angelegt: Das System erzeugt die Termine ohne Feiertage und Schließtage des Balneum und veröffentlicht ihn in drei Sprachen.",
+  c_type:"Art", c_daytime:"Tag und Uhrzeit", c_cap:"Plätze", c_book:"Angemeldet", c_wait:"Warteliste",
+  comm_h:"Mitteilung an eine Gruppe", comm_g:"Empfänger", comm_all:"Alle angemeldeten Familien", comm_send:"Mitteilung senden", comm_tr:"Fehlende Sprachen automatisch vorschlagen",
+  comm_ex:"Am Donnerstag, 15.10., ist das Becken wegen Wartung geschlossen: Die Einheit wird auf den 22.12. verschoben.",
+  comm_sent:"Mitteilung an {n} Kontakte gesendet, jeweils in ihrer Sprache (Demo).", comm_trd:"Entwürfe erstellt: bitte vor dem Senden prüfen.",
+  ct_h:"Stand der Übersetzungen", ct_page:"Inhalt", ok:"Veröffentlicht", rv:"In Prüfung", miss:"Zu übersetzen",
+  roles_h:"Rollen und Rechte", roles_t:"Vorstand, Sekretariat, Leitung, Trainer:innen, Redaktion und Schwimmlehrer:innen sehen nur, was sie brauchen. Anmeldung mit Zwei-Faktor-Bestätigung."
+},
+en:{
+  _locale:"en-GB", _name:"English",
+  skip:"Skip to content", proto:"Prototype of the new website. Courses taken from the current site (autumn 2026); spots and some times are sample data.",
+  nav_courses:"Courses", nav_school:"Swim school", nav_team:"Team", nav_club:"The club", nav_news:"News", nav_contact:"Contact", nav_admin:"Admin",
+  cta_book:"Book a course", fam:"Family area", menu:"Menu", close:"Close", home:"Home",
+  brand_sub:"Swimming section, Vipiteno/Sterzing",
+  hero_h1:"A lane for every age.",
+  hero_sub:"FIN federal swim school at the Balneum pool in Vipiteno/Sterzing. Pick your lane, find a slot and sign up online in minutes.",
+  pool_cap:"Pick your lane", pool_cap2:"25 m pool, Balneum",
+  lane_baby:"Babies with a parent", lane_kids:"Kids and teens from age\u00a04", lane_adults:"Adults", lane_fitness:"Aqua fitness", lane_private:"Private lessons", lane_team:"Competitive team",
+  lane_team_m:"Training, races and trials to join the team", lane_private_m:"One instructor just for you, voucher valid for 1 year",
+  from:"from {p}", sessions:"{n} sessions", lessons:"{n} lessons",
+  fact1:"Federal swim school", fact1t:"The only FIN-recognised school in Vipiteno and the Isarco valley",
+  fact2:"19 coaches", fact2t:"Instructors and coaches certified by the Italian Swimming Federation",
+  fact3:"Balneum", fact3t:"25 m sports pool, Piazza Karl Riedmann 5",
+  fact4:"80 years", fact4t:"Polisportiva A.V.I. turns 80 in 2026",
+  courses_h:"Autumn 2026 courses", courses_sub:"Registration is open. Free spots update in real time.",
+  col_course:"Course", col_when:"When", col_age:"Age", col_spots:"Spots", col_price:"Price",
+  signup:"Sign up", waitlist:"Waitlist", spots_left:"{n} spots left", spot_left:"1 spot left", full:"Full",
+  left:"{n} of {t} left", ended:"Finished", all_courses:"See all courses", time_tbd:"time to be confirmed",
+  team_h:"From swim school to the national team.",
+  team_sub:"Marie Ungerank has been called up to Italy's youth open-water team for the COMEN Cup in Malta, 9–11 October 2026.",
+  captains:"Captains for the 2026/27 season: Elina Hofer and Marie Ungerank.",
+  team_cta:"Meet the team",
+  news_h:"News", news_all:"All news",
+  where_h:"Find us at the Balneum", where_t:"Lessons take place in the Balneum indoor pool in the centre of Vipiteno/Sterzing.",
+  addr:"Address", phone:"Phone", phone_h:"Mirja Ottaviani, afternoons 3–5 pm", maps:"Open in Google Maps", write:"Write to us",
+  f_club:"The club", f_info:"Information", privacy:"Privacy", cookies:"Cookies", terms:"Booking terms", safeguarding:"Safeguarding", transparency:"Public funding", docs:"Documents and statute",
+  f_legal:"ASD Polisportiva A.V.I. Vipiteno – Swimming section, tax code 00701590218",
+  cookie_t:"We only use technical cookies. Instagram content loads only if you choose.", cookie_ok:"Accept all", cookie_no:"Necessary only",
+  courses_h1:"Courses and booking", courses_intro:"Filter by who is swimming and by day. Every slot shows dates, free spots and price up front.",
+  who:"For", day:"Day", all:"All", none:"No courses match these filters.", reset:"Clear filters",
+  b_title:"Sign up", st1:"Course", st2:"Swimmer", st3:"Contact", st4:"Payment",
+  b_dates:"Course dates", b_left:"Sessions left: {n}", b_total:"Total",
+  b_first:"First name", b_last:"Last name", b_birth:"Date of birth", b_level:"In the water they are…",
+  lvl1:"new to the water", lvl2:"comfortable but can't float alone", lvl3:"independent, swims a few metres", lvl4:"confident, knows at least 2 strokes",
+  b_notes:"Notes for the instructor", b_notes_h:"Allergies, special needs, fears. Optional.",
+  b_payer:"Name of parent or payer", b_email:"Email", b_tel:"Mobile", b_lang:"Language for messages",
+  b_priv:"I have read the privacy notice and accept the booking terms.", b_photo:"I agree to photos and videos during activities (optional).",
+  b_pay:"Payment method", pay_card:"Card", pay_pp:"PayPal", pay_sp:"Satispay", pay_bt:"Bank transfer",
+  back:"Back", next:"Continue", pay_now:"Pay and confirm", join_wait:"Join the waitlist",
+  req:"Required", bad_email:"Enter a valid email, e.g. name@example.com",
+  age_warn:"This age doesn't match the slot ({a}). You can continue or choose another slot.",
+  done_t:"Booking confirmed", done_w:"You're on the waitlist",
+  done_p:"We've sent the confirmation, dates and receipt to {e}. Booking code: {c}.",
+  done_pw:"We'll email {e} as soon as a spot opens. Code: {c}.",
+  add_cal:"Add to calendar", cal_toast:"In the final site: a calendar file with every date.",
+  wait_note:"This course is full, so you pay nothing now. If a spot opens we'll tell you and you'll have 48 hours to confirm.",
+  fam_t:"Family area", fam_p:"In the final site every family gets its own space:", fam_1:"children's profiles and active bookings", fam_2:"receipts for Italy's 19% tax deduction on children's sport (ages 5–18)", fam_3:"one-click renewal and priority for next season", fam_4:"alerts about cancelled lessons and missing documents",
+  school_h1:"Swim school", school_intro:"A step-by-step path from the first splash to all four strokes. Small groups by age, instructors certified by the Italian Swimming Federation.",
+  levels_h:"The path",
+  l1:"Water confidence", l1t:"Trust through play: face in the water, blowing bubbles, gliding.",
+  l2:"Floating and breathing", l2t:"Floating on front and back, breathing out into the water with rhythm.",
+  l3:"Moving", l3t:"Arms and legs together for the first metres without aids.",
+  l4:"Strokes", l4t:"Front crawl and backstroke, then breaststroke and butterfly. First turns.",
+  l5:"Refinement", l5t:"Four strokes, starts and turns: the bridge to the competitive team.",
+  lv_note:"Indicative path: level names and content to be confirmed with the swim school coordinators.",
+  bring_h:"First lesson: what to bring", bring:["Swimsuit and cap","Goggles","Pool sandals","Bathrobe or towel","Shampoo and a water bottle","Arrive 10 minutes early"],
+  faq_h:"Questions",
+  q1:"Can I try before signing up?", a1:"Write to us: if the slot has free spots we'll suggest a day to meet the group and instructor.",
+  q2:"Do I need a medical certificate?", a2:"The competitive team needs a sports medical certificate for competition. For courses we'll tell you the requirements when you sign up, and you can upload documents in the family area.",
+  q3:"How do I get a receipt for my tax return?", a3:"It's in the family area right after payment, ready for the deduction on sports costs for children aged 5 to 18.",
+  team_h1:"Competitive team", team_intro:"Juniors, age-group and senior swimmers train all year in the short-course pool and in open water, racing in South Tyrol, Trentino, Austria and at the Italian championships.",
+  res_h:"Recent results", search:"Search swimmer or meet", join_h:"Want to join the team?", join_t:"Trials in September and January for swimmers who have completed the swim school path. Write to us to train with the coaches.", join_cta:"Ask for a trial",
+  ig:"Follow @polisportiva.sterzing.swimteam",
+  club_h1:"The club", club_intro:"Polisportiva A.V.I. turns 80. Its swimming section is a federal swim school: to grant the licence the FIN checks requirements, facilities and staff qualifications, which are refreshed every year.",
+  staff_h:"The staff", s_all:"All", s_coord:"Coordination", s_coach:"Coaches", s_fit:"Aqua fitness",
+  r_I:"Instructor", r_I2:"Instructor level 2", r_I1:"Instructor level 1", r_A1:"Coach level 1", r_A2:"Coach level 2", r_AB:"Lifeguard", r_C:"Swim school coordinator", r_F:"Aqua fitness instructor", r_SIT:"Regional SIT trainer", r_ATL:"Athletics instructor",
+  sg_h:"Safeguarding", sg_t:"Protecting children and young people from abuse, violence and discrimination. The safeguarding officer is the contact for families, athletes and staff.",
+  sg_who:"Safeguarding officer", sg_cta:"Report confidentially", sg_docs:"Safeguarding policy and code of conduct (PDF)",
+  tr_h:"Public funding transparency", tr_t:"Grants received from public bodies, published under Italian Law 124/2017.",
+  tr_y:"Year", tr_n:"Grants", tr_tot:"Total", tr_pdf:"PDF details", tr_pend:"Being published",
+  news_h1:"News", c_team:"Team", c_courses:"Courses", c_club:"Club",
+  contact_h1:"Contact", contact_intro:"For courses and bookings call in the afternoon or write to us: we answer in Italian, German or English.",
+  f_name:"Full name", f_topic:"Topic", t_courses:"Courses and booking", t_team:"Competitive team", t_sg:"Safeguarding (confidential)", t_other:"Other", f_msg:"Message", f_send:"Send message", sent:"Message sent. We'll reply within 2 working days.",
+  a_title:"Admin panel", a_demo:"Preview with sample data", a_ov:"Overview", a_courses:"Courses", a_comm:"Messages", a_content:"Content and languages",
+  k1:"Enrolled autumn 2026", k2:"Spots filled", k3:"On waitlists", k4:"Course revenue",
+  occ_h:"Fill rate by lane", chk_h:"Automatic checks", chk_date:"{c}: {d} is not a {w}.", chk_ok:"No other problems found.",
+  task_h:"To do today", task1:"3 medical certificates expire within 30 days", task2:"2 bank transfers to verify", task3:"Publish 2025 grants on the Transparency page",
+  reg_h:"Latest sign-ups", reg_who:"Swimmer", reg_course:"Course", reg_pay:"Payment", paid:"Paid", pending:"Pending",
+  c_new:"New course", c_dup:"Copy to spring 2027", c_dup_t:"Season copied: 28 draft courses for spring 2027 (demo).",
+  c_new_t:"Create a course once: the system generates the dates, skipping holidays and Balneum closures, and publishes it in all three languages.",
+  c_type:"Type", c_daytime:"Day and time", c_cap:"Capacity", c_book:"Booked", c_wait:"Waitlist",
+  comm_h:"Message a group", comm_g:"Recipients", comm_all:"All enrolled families", comm_send:"Send message", comm_tr:"Draft missing languages automatically",
+  comm_ex:"On Thursday 15 Oct the pool is closed for maintenance: the lesson moves to 22 Dec.",
+  comm_sent:"Message sent to {n} contacts, each in their own language (demo).", comm_trd:"Drafts created: check them before sending.",
+  ct_h:"Translation status", ct_page:"Content", ok:"Published", rv:"In review", miss:"To translate",
+  roles_h:"Roles and permissions", roles_t:"Board, office, coordinators, coaches, editors and instructors only see what they need. Sign-in with two-step verification."
+}
+};
+
+/* ---------- course data (autumn 2026, from polisportiva-avi.it) ---------- */
+const N = (it,de,en)=>({it,de,en});
+const KID_SLOTS = [
+  {t:"14:00–14:50", a:[4,5], age:N("4–5 anni","4–5 Jahre","4–5 yrs")},
+  {t:"14:50–15:40", a:[5,7], age:N("5–7 anni","5–7 Jahre","5–7 yrs")},
+  {t:"15:40–16:30", a:[7,12], age:N("7–12 anni","7–12 Jahre","7–12 yrs")},
+  {t:"15:40–16:30", a:[12,99], age:N("dai 12 anni","ab 12 Jahren","12+ yrs")}
+];
+const KID_DATES = {
+  1:["09-21","09-28","10-05","10-12","10-19","10-26","11-09","11-16","11-23","11-30","12-14","12-21"],
+  2:["09-22","09-29","10-06","10-13","10-20","10-27","11-10","11-17","11-24","12-01","12-15","12-22"],
+  3:["09-23","09-30","10-07","10-14","10-21","10-28","11-11","11-18","11-25","12-02","12-09","12-16"],
+  5:["09-25","10-02","10-08","10-16","10-23","10-30","11-13","11-20","11-27","12-04","12-11","12-18"],
+  6:["09-26","10-03","10-09","10-17","10-24","10-31","11-14","11-21","11-28","12-05","12-12","12-19"]
+};
+const COURSES = [];
+Object.keys(KID_DATES).forEach(d=>{
+  KID_SLOTS.forEach((s,i)=>COURSES.push({id:`k${d}${i}`,lane:"kids",name:N("Corso di nuoto bambini","Kinderschwimmkurs","Kids' swimming course"),day:+d,time:s.t,ages:s.a,age:s.age,n:12,unit:"lessons",price:120,dates:KID_DATES[d],cap:8}));
+});
+COURSES.push(
+ {id:"b2",lane:"baby",name:N("Nuoto bebè","Babyschwimmen","Baby swimming"),day:2,time:"",ages:null,age:N("con un genitore","mit Elternteil","with a parent"),n:10,unit:"sessions",price:84,dates:["09-29","10-06","10-13","10-20","10-27","11-10","11-17","11-24","12-01","12-15"],cap:8},
+ {id:"a1",lane:"adults",name:N("Nuoto adulti, livello avanzato","Erwachsene, Fortgeschrittene","Adults, advanced level"),day:1,time:"20:00–21:00",ages:[16,99],age:N("adulti","Erwachsene","adults"),n:10,unit:"lessons",price:115,dates:["10-05","10-12","10-19","10-26","11-09","11-16","11-23","11-30","12-14","12-21"],cap:12},
+ {id:"a3",lane:"adults",name:N("Nuoto adulti, livello avanzato","Erwachsene, Fortgeschrittene","Adults, advanced level"),day:3,time:"20:00–21:00",ages:[16,99],age:N("adulti","Erwachsene","adults"),n:10,unit:"lessons",price:115,dates:["10-07","10-14","10-21","10-28","11-11","11-18","11-25","12-02","12-09","12-16"],cap:12},
+ {id:"a4",lane:"adults",name:N("Nuoto adulti, livello avanzato","Erwachsene, Fortgeschrittene","Adults, advanced level"),day:4,time:"20:00–21:00",ages:[16,99],age:N("adulti","Erwachsene","adults"),n:10,unit:"lessons",price:115,dates:["10-08","10-15","10-22","10-29","11-12","11-19","11-26","12-03","12-10","12-17"],cap:12},
+ {id:"a5",lane:"adults",name:N("Nuoto adulti, livello avanzato","Erwachsene, Fortgeschrittene","Adults, advanced level"),day:5,time:"20:00–21:00",ages:[16,99],age:N("adulti","Erwachsene","adults"),n:10,unit:"lessons",price:115,dates:["10-09","10-16","10-23","10-30","11-13","11-20","11-27","12-04","12-11","12-18"],cap:12},
+ {id:"f1",lane:"fitness",name:N("Acqua Alta, deep water fitness","Acqua Alta, Tiefwasser-Fitness","Acqua Alta, deep-water fitness"),day:2,time:"20:15–21:00",ages:[16,99],age:N("adulti","Erwachsene","adults"),n:10,unit:"sessions",price:100,dates:["09-29","10-06","10-13","10-20","10-27","11-10","11-17","11-24","12-01","12-15"],cap:14},
+ {id:"f2",lane:"fitness",name:N("Aquabike","Aquabike","Aquabike"),day:3,time:"20:00–20:45",ages:[16,99],age:N("adulti","Erwachsene","adults"),n:10,unit:"sessions",price:100,dates:["09-30","10-07","10-14","10-21","10-28","11-11","11-18","11-25","12-02","12-09"],cap:12},
+ {id:"f3",lane:"fitness",name:N("Acqua Relax","Acqua Relax","Acqua Relax"),day:4,time:"20:00–20:45",ages:[16,99],age:N("adulti","Erwachsene","adults"),n:10,unit:"sessions",price:100,dates:["10-08","10-15","10-22","10-29","11-12","11-19","11-26","12-03","12-10","12-17"],cap:14},
+ {id:"f4",lane:"fitness",name:N("Aquabike","Aquabike","Aquabike"),day:4,time:"13:30–14:15",ages:[16,99],age:N("adulti","Erwachsene","adults"),n:10,unit:"sessions",price:100,dates:["10-08","10-15","10-22","10-29","11-12","11-19","11-26","12-03","12-10","12-17"],cap:12},
+ {id:"f5",lane:"fitness",name:N("Aquabike","Aquabike","Aquabike"),day:5,time:"13:15–14:00",ages:[16,99],age:N("adulti","Erwachsene","adults"),n:10,unit:"sessions",price:100,dates:["10-02","10-08","10-16","10-23","10-30","11-13","11-20","11-27","12-04","12-11"],cap:12},
+ {id:"p1",lane:"private",name:N("Lezione privata 1 ora, adulti","Privatstunde 1 Stunde, Erwachsene","1-hour private lesson, adults"),day:0,time:"",ages:[16,99],age:N("1–3 persone","1–3 Personen","1–3 people"),n:1,unit:"lessons",price:44,priceMax:66,dates:[],cap:99,voucher:true},
+ {id:"p2",lane:"private",name:N("Lezione privata 1 ora, bambini","Privatstunde 1 Stunde, Kinder","1-hour private lesson, kids"),day:0,time:"",ages:[3,15],age:N("1–3 bambini","1–3 Kinder","1–3 children"),n:1,unit:"lessons",price:44,priceMax:66,dates:[],cap:99,voucher:true}
+);
+/* demo occupancy, deterministic */
+COURSES.forEach((c,i)=>{const h=[...c.id].reduce((s,ch)=>s*31+ch.charCodeAt(0),7)%997; c.booked=c.voucher?0:Math.min(c.cap,Math.round(c.cap*(.5+(h%70)/100))); c.wait=c.booked>=c.cap?1+(h%4):0;});
+
+const LANES = ["baby","kids","adults","fitness","private","team"];
+
+const STAFF = [
+ ["Antonella","Cascino",["I"]],["Mirco","Cola",["I2","A1","AB"]],["Pierluigi","Cola",["I2","AB","C"]],["Elisa","Eisendle",["I","AB"]],
+ ["Selina","Ferri",["I","AB"]],["Kathrin","Frick",["I","AB"]],["Evelin","Graus",["I","AB"]],["Elyssa","Hofer",["I"]],
+ ["Stefanie","Linser",["I2","A1","AB"]],["Michele","Mazzei",["I","AB","F"]],["Cristina","Niccolai",["I"]],["Ilaria","Ottaviani",["I","AB"]],
+ ["Mirja","Ottaviani",["I2","A2","AB","C","SIT"]],["Eduard","Prota",["I2","A1","AB"]],["Annelies","Schaiter",["I2","AB"]],["Emily","Sigmund",["I"]],
+ ["Maria","Sparber",["I1","AB"]],["Elisabeth","Stofner",["I2","AB","ATL"]],["Ingrid","Tock",["I"]]
+];
+
+const RESULTS = [
+ {time:"2:18.20", ev:N("200 farfalla","200 m Delfin","200 m butterfly"), who:"Marie Ungerank", meet:N("Campionati Italiani di Categoria, Roma, agosto 2026. 5ª Junior e record provinciale Junior e Cadetti.","Italienische Jugendmeisterschaften, Rom, August 2026. 5. Platz Juniores und Südtiroler Landesrekord.","Italian age-group championships, Rome, August 2026. 5th junior and South Tyrol junior record.")},
+ {time:"14", ev:N("medaglie: 7 ori, 4 argenti, 3 bronzi","Medaillen: 7 Gold, 4 Silber, 3 Bronze","medals: 7 gold, 4 silver, 3 bronze"), who:"Team", meet:N("17° Rovereto Swim Meeting, giugno 2026.","17. Rovereto Swim Meeting, Juni 2026.","17th Rovereto Swim Meeting, June 2026.")},
+ {time:"1500 m", ev:N("stile libero, record provinciale","Freistil, Landesrekord","freestyle, provincial record"), who:"Lara Minzoni", meet:N("Campionati provinciali in vasca corta, Merano, marzo 2026. Cadetti e assoluti.","Landesmeisterschaften Kurzbahn, Meran, März 2026. Kadetten und Allgemeine Klasse.","Provincial short-course championships, Merano, March 2026. Cadets and seniors.")},
+ {time:"1:04.27", ev:N("100 farfalla","100 m Delfin","100 m butterfly"), who:"Marie Ungerank", meet:N("Campionati Italiani di Categoria, Roma. Nuovo personale, 21ª Junior.","Italienische Jugendmeisterschaften, Rom. Neue Bestzeit, 21. Platz Juniores.","Italian age-group championships, Rome. Personal best, 21st junior.")}
+];
+
+const NEWS = [
+ {d:"2026-09", c:"club", t:N("80 anni di Polisportiva A.V.I.","80 Jahre Polisportiva A.V.I.","Polisportiva A.V.I. turns 80"), s:N("Il programma dei festeggiamenti e la storia del club, ora anche da leggere online invece che in PDF.","Das Festprogramm und die Vereinsgeschichte, jetzt online lesbar statt als PDF.","The celebration programme and club history, now readable online instead of a PDF.")},
+ {d:"2026-09", c:"team", t:N("Marie convocata in Nazionale giovanile acque libere","Marie in die Jugend-Nationalmannschaft Freiwasser berufen","Marie called up to Italy's youth open-water team"), s:N("Training camp a Ostia e COMEN Cup a Malta dal 9 all'11 ottobre.","Trainingslager in Ostia und COMEN Cup in Malta vom 9. bis 11. Oktober.","Training camp in Ostia and the COMEN Cup in Malta, 9–11 October.")},
+ {d:"2026-09", c:"courses", t:N("Corsi d'autunno prenotabili online","Herbstkurse online buchbar","Autumn courses open for booking"), s:N("Bambini, adulti, bebè e acquafitness: scegli il turno e iscriviti in pochi minuti.","Kinder, Erwachsene, Babys und Wasserfitness: Termin wählen und in wenigen Minuten anmelden.","Kids, adults, babies and aqua fitness: pick a slot and sign up in minutes.")},
+ {d:"2026-08", c:"club", t:N("Verbale dell'assemblea generale dei soci","Protokoll der Mitgliederversammlung","Minutes of the general members' meeting"), s:N("Decisioni e bilancio approvati dall'assemblea.","Beschlüsse und Bilanz der Versammlung.","Decisions and accounts approved by the meeting.")},
+ {d:"2026-06", c:"team", t:N("Programmazione tecnica stagione 2026/27","Sportliche Planung Saison 2026/27","Technical programme for the 2026/27 season"), s:N("Gruppi, allenatori e obiettivi della sezione nuoto per la nuova stagione.","Gruppen, Trainer:innen und Ziele der Sektion für die neue Saison.","Groups, coaches and goals of the swimming section for the new season.")},
+ {d:"2026-06", c:"team", t:N("Campionati provinciali Esordienti, Bolzano","Landesmeisterschaften Anwärter, Bozen","Provincial junior championships, Bolzano"), s:N("Podi individuali e staffette, a ridosso dei club più grandi nella classifica a squadre.","Podestplätze im Einzel und in den Staffeln, knapp hinter den großen Vereinen.","Individual and relay podiums, just behind the big clubs in the team ranking.")}
+];
+
+const GRANTS = [
+ {y:2025,pending:true},{y:2024,pdf:true},{y:2023,pdf:true},
+ {y:2022,n:3,tot:5300},{y:2021,n:4,tot:5400},{y:2020,n:5,tot:11900},{y:2019,n:4,tot:11100}
+];
+
+const SLUGS = {
+ it:{home:"",courses:"corsi",school:"scuola-nuoto",team:"squadra",club:"club",news:"notizie",contact:"contatti",admin:"gestione"},
+ de:{home:"",courses:"kurse",school:"schwimmschule",team:"mannschaft",club:"verein",news:"news",contact:"kontakt",admin:"verwaltung"},
+ en:{home:"",courses:"courses",school:"swim-school",team:"team",club:"club",news:"news",contact:"contact",admin:"admin"}
+};
+
+Object.assign(I18N.it,{sh_baby:"Bebè",sh_kids:"Bambini e ragazzi",sh_adults:"Adulti",sh_fitness:"Acquafitness",sh_private:"Lezioni private",by_appt:"Su appuntamento",voucher:"Buono valido 1 anno",persons:"Numero di persone",p1:"1 persona",p2:"2 persone",p3:"3 persone",when_lbl:"Quando",gen:"Genera date",gen_from:"Primo giorno",gen_n:"Numero di lezioni",gen_skip:"Saltati per festività: {d}",gen_none:"Nessuna festività nel periodo.",fam_ok:"Ho capito",read:"Leggi",docs_soon:"Nel sito finale: documento consultabile online e scaricabile."});
+Object.assign(I18N.de,{sh_baby:"Babys",sh_kids:"Kinder und Jugendliche",sh_adults:"Erwachsene",sh_fitness:"Wasserfitness",sh_private:"Privatstunden",by_appt:"Nach Vereinbarung",voucher:"Gutschein 1 Jahr gültig",persons:"Anzahl Personen",p1:"1 Person",p2:"2 Personen",p3:"3 Personen",when_lbl:"Wann",gen:"Termine erzeugen",gen_from:"Erster Tag",gen_n:"Anzahl Einheiten",gen_skip:"Wegen Feiertag ausgelassen: {d}",gen_none:"Keine Feiertage im Zeitraum.",fam_ok:"Verstanden",read:"Lesen",docs_soon:"In der finalen Website: Dokument online lesbar und zum Herunterladen."});
+Object.assign(I18N.en,{sh_baby:"Babies",sh_kids:"Kids and teens",sh_adults:"Adults",sh_fitness:"Aqua fitness",sh_private:"Private lessons",by_appt:"By appointment",voucher:"Voucher valid for 1 year",persons:"Number of people",p1:"1 person",p2:"2 people",p3:"3 people",when_lbl:"When",gen:"Generate dates",gen_from:"First day",gen_n:"Number of lessons",gen_skip:"Skipped for holidays: {d}",gen_none:"No holidays in this period.",fam_ok:"Got it",read:"Read",docs_soon:"In the final site: document readable online and downloadable."});
+
+const S = {lang:"it", route:"home", q:{}, b:null, adm:{tab:"ov", ml:"it", msg:{it:"",de:"",en:""}, grp:"all", gen:null}, staffF:"all", newsF:"all", resQ:""};
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const t = (k, v) => { let s = (I18N[S.lang][k] ?? I18N.it[k] ?? k); if (v) for (const x in v) s = s.split("{"+x+"}").join(v[x]); return s; };
+const tr = o => o ? (o[S.lang] ?? o.it) : "";
+const loc = () => I18N[S.lang]._locale;
+const eur = n => new Intl.NumberFormat(loc(),{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(n);
+const dObj = md => { const [m,d] = md.split("-").map(Number); return new Date(2026, m-1, d); };
+const fmtD = dt => new Intl.DateTimeFormat(loc(), S.lang==="en" ? {day:"numeric",month:"short"} : {day:"2-digit",month:"2-digit"}).format(dt);
+const dayName = (d, style="long") => new Intl.DateTimeFormat(loc(),{weekday:style}).format(new Date(2026,9,4+d));
+const cap1 = s => s.charAt(0).toUpperCase()+s.slice(1);
+const today = (()=>{const d=new Date(); d.setHours(0,0,0,0); return d;})();
+const remaining = c => c.dates.filter(x => dObj(x) >= today).length;
+const nextDate = c => c.dates.map(dObj).find(x => x >= today);
+const free = c => c.cap - c.booked;
+const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+const IC = {
+  chev:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>',
+  x:'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+  menu:'<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>',
+  phone:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>',
+  check:'<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+};
+const LOGO = '<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#17719F"/><path d="M6 17c3.5-3 7-3 10.5 0s7 3 10.5 0 5-2.4 7-1.4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><path d="M6 25c3.5-3 7-3 10.5 0s7 3 10.5 0 5-2.4 7-1.4" fill="none" stroke="#9ED8EC" stroke-width="2.6" stroke-linecap="round"/><circle cx="13" cy="33.5" r="2.6" fill="#D7263D"/><circle cx="20" cy="33.5" r="2.6" fill="#F6C324"/><circle cx="27" cy="33.5" r="2.6" fill="#D7263D"/></svg>';
+
+/* ---------- routing ---------- */
+const href = (key, q) => { const s = SLUGS[S.lang][key]; let h = "#/"+S.lang+"/"+s; if (q) h += "?"+new URLSearchParams(q).toString(); return h; };
+function parse(){
+  const raw = location.hash.replace(/^#\/?/,""); const [path, qs] = raw.split("?"); const parts = path.split("/").filter(Boolean);
+  let lang = parts[0];
+  if (!I18N[lang]) { lang = store.get("avi-lang") || (navigator.language||"it").slice(0,2); if (!I18N[lang]) lang = "it"; }
+  S.lang = lang;
+  const slug = parts[1] || ""; let key = "home";
+  for (const L of [lang,"it","de","en"]) { const f = Object.entries(SLUGS[L]).find(([k,v]) => v===slug); if (f) { key = f[0]; break; } }
+  S.route = key; S.q = Object.fromEntries(new URLSearchParams(qs||""));
+}
+function go(h){ if (location.hash === h) render(); else location.hash = h; }
+
+/* ---------- shell ---------- */
+function header(){
+  const keys = ["courses","school","team","club","news","contact"];
+  const nav = keys.map(k => `<a href="${href(k)}" ${S.route===k?'aria-current="page"':''}>${t("nav_"+k)}</a>`).join("");
+  const langs = ["de","it","en"].map(l => `<button type="button" data-lang="${l}" aria-pressed="${S.lang===l}" lang="${l}" title="${I18N[l]._name}">${l.toUpperCase()}</button>`).join("");
+  $("#hdr").innerHTML = `
+    <a class="brand" href="${href("home")}">${LOGO}<span class="brand-t">Polisportiva A.V.I.<small>${t("brand_sub")}</small></span></a>
+    <nav class="nav" aria-label="${t("menu")}">${nav}</nav>
+    <div class="langs" role="group" aria-label="Lingua / Sprache / Language">${langs}</div>
+    <button class="btn btn-ghost btn-sm fam" type="button" data-act="fam">${t("fam")}</button>
+    <a class="btn btn-go btn-sm" href="${href("courses")}">${t("cta_book")}</a>
+    <button class="menu-btn" type="button" data-act="menu" aria-expanded="false" aria-controls="sheet">${IC.menu}<span class="sr">${t("menu")}</span></button>`;
+  $("#sheet").innerHTML = `
+    <div class="sheet-top"><a class="brand" href="${href("home")}" data-act="closemenu">${LOGO}<span class="brand-t">Polisportiva A.V.I.</span></a><button class="x" type="button" data-act="closemenu" aria-label="${t("close")}">${IC.x}</button></div>
+    <nav aria-label="${t("menu")}">${keys.map(k=>`<a href="${href(k)}" data-act="closemenu">${t("nav_"+k)}</a>`).join("")}<a href="${href("admin")}" data-act="closemenu">${t("nav_admin")}</a></nav>
+    <button class="btn btn-line" type="button" data-act="fam">${t("fam")}</button>
+    <a class="btn btn-go" href="${href("courses")}" data-act="closemenu">${t("cta_book")}</a>`;
+  $("#proto").textContent = t("proto");
+  document.querySelector(".skip").textContent = t("skip");
+}
+function footer(){
+  const L = (k, key) => `<li><a href="${href(key||"club")}">${t(k)}</a></li>`;
+  $("#ftr").innerHTML = `<div class="rope" aria-hidden="true"></div><div class="wrap">
+   <div class="foot-g">
+     <div><a class="brand" href="${href("home")}" style="color:#fff">${LOGO}<span class="brand-t">Polisportiva A.V.I.<small style="color:#93A8B9">${t("brand_sub")}</small></span></a>
+       <p style="margin-top:16px;color:#93A8B9;font-size:.95rem">Balneum, Piazza Karl Riedmann 5<br>39049 Vipiteno / Sterzing (BZ)</p></div>
+     <div><h4>${t("f_club")}</h4><ul>${L("nav_school","school")}${L("nav_team","team")}${L("nav_club","club")}${L("nav_news","news")}<li><a href="${href("admin")}">${t("nav_admin")}</a></li></ul></div>
+     <div><h4>${t("f_info")}</h4><ul><li><a href="#" data-act="doc">${t("privacy")}</a></li><li><a href="#" data-act="doc">${t("cookies")}</a></li><li><a href="#" data-act="doc">${t("terms")}</a></li><li><a href="${href("club")}#sg">${t("safeguarding")}</a></li><li><a href="${href("club")}#tr">${t("transparency")}</a></li></ul></div>
+     <div><h4>${t("nav_contact")}</h4><ul><li><a href="tel:+393386002385">+39 338 600 2385</a></li><li><a href="${href("contact")}">${t("write")}</a></li><li><a href="https://www.instagram.com/polisportiva.sterzing.swimteam/" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+   </div>
+   <div class="foot-b"><span>${t("f_legal")}</span><span>© 2026</span></div></div>`;
+  $("#mbar").innerHTML = S.route==="admin" ? "" : `<a class="btn btn-line" href="tel:+393386002385">${IC.phone}<span>${t("phone")}</span></a><a class="btn btn-go" href="${href("courses")}">${t("cta_book")}</a>`;
+}
+
+/* ---------- pieces ---------- */
+function laneMeta(l){
+  const cs = COURSES.filter(c=>c.lane===l);
+  if (l==="team") return t("lane_team_m");
+  if (l==="private") return `${t("lane_private_m")}, ${t("from",{p:eur(44)})}`;
+  const days = [...new Set(cs.map(c=>c.day))].sort().map(d=>cap1(dayName(d,"short").replace(".",""))).join(", ");
+  const min = Math.min(...cs.map(c=>c.price));
+  if (l==="fitness") return `Acqua Alta, Aquabike, Acqua Relax. ${days}, ${t("from",{p:eur(min)})}`;
+  const c0 = cs[0];
+  return `${days}. ${t(c0.unit,{n:c0.n})}, ${t("from",{p:eur(min)})}`;
+}
+function lanes(){
+  return `<ol class="lanes">${LANES.map((l,i)=>{
+    const h = l==="team" ? href("team") : href("courses",{who:l});
+    return `<li class="lane"><a href="${h}"><span class="lane-n" aria-hidden="true">${i+1}</span><span><span class="lane-t">${t("lane_"+l)}</span><span class="lane-m">${esc(laneMeta(l))}</span></span><span class="lane-go" aria-hidden="true">${IC.chev}</span></a></li>${i<LANES.length-1?'<li class="rope" aria-hidden="true"></li>':''}`;
+  }).join("")}</ol>`;
+}
+function beads(c){
+  const n = Math.min(c.cap,10), f = Math.round(c.booked/c.cap*n), full = c.booked>=c.cap;
+  return `<div class="beads ${full?"full":""}" aria-hidden="true">${Array.from({length:n},(_,i)=>`<i class="${i<f?"f":""}"></i>`).join("")}</div>`;
+}
+function row(c){
+  const fr = free(c), full = fr<=0;
+  const when = c.voucher ? `<b>${t("by_appt")}</b><span>${t("voucher")}</span>` :
+    `<b>${cap1(dayName(c.day))}${c.time?" "+c.time.split("–")[0]:""}</b><span>${c.time?c.time:t("time_tbd")}, ${remaining(c)?t("left",{n:remaining(c),t:c.dates.length}):t("ended")}</span>`;
+  const spots = c.voucher ? `<span class="tag">${t("voucher")}</span>` : `${beads(c)}<span class="spots ${fr<=2?"low":""}">${full?t("full"):fr===1?t("spot_left"):t("spots_left",{n:fr})}</span>`;
+  const price = c.priceMax ? `${c.price}–${eur(c.priceMax)}` : eur(c.price);
+  const act = full ? `<button class="btn btn-wait btn-sm" type="button" data-book="${c.id}">${t("waitlist")}</button>` : `<button class="btn btn-go btn-sm" type="button" data-book="${c.id}">${t("signup")}</button>`;
+  return `<div class="heat-r"><div class="c-name">${esc(tr(c.name))}<small>${esc(tr(c.age))}${c.voucher?"":", "+t(c.unit,{n:c.n})}</small></div><div class="c-when">${when}</div><div class="c-age">${esc(tr(c.age))}</div><div class="c-spots">${spots}</div><div class="c-price tnum">${price}</div><div class="c-act">${act}</div></div>`;
+}
+function heat(list){
+  return `<div class="heat" role="table"><div class="heat-h" role="row"><span>${t("col_course")}</span><span>${t("col_when")}</span><span>${t("col_age")}</span><span>${t("col_spots")}</span><span>${t("col_price")}</span><span></span></div>${list.map(row).join("")}</div>`;
+}
+function board(items){
+  return `<div class="board">${items.map(r=>`<div class="board-r"><div class="time">${esc(r.time)}</div><div><h3>${esc(r.who)}, ${esc(tr(r.ev))}</h3><p>${esc(tr(r.meet))}</p></div></div>`).join("")}</div>`;
+}
+const newsDate = d => { const [y,m]=d.split("-").map(Number); return cap1(new Intl.DateTimeFormat(loc(),{month:"short",year:"numeric"}).format(new Date(y,m-1,1))); };
+function newsList(items){
+  return `<div class="news">${items.map(n=>`<a href="${href("news")}"><time>${newsDate(n.d)}</time><div><h3>${esc(tr(n.t))}</h3><p>${esc(tr(n.s))}</p></div><span class="tag">${t("c_"+n.c)}</span></a>`).join("")}</div>`;
+}
+function place(){
+  return `<div class="place"><div class="place-map" aria-hidden="true">
+     <svg viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0">
+      <rect width="400" height="300" fill="#17719F"/>
+      <path d="M-10 210 C80 180 140 240 230 200 S360 150 420 170" stroke="#9ED8EC" stroke-width="18" fill="none" opacity=".55"/>
+      <path d="M60 -10 L120 310 M260 -10 L210 310 M-10 90 L410 120" stroke="rgba(255,255,255,.35)" stroke-width="7" fill="none"/>
+      <rect x="150" y="95" width="120" height="70" rx="8" fill="#0E5682" stroke="#fff" stroke-width="3"/>
+      <g stroke="#9ED8EC" stroke-width="2"><path d="M162 112h96M162 128h96M162 144h96"/></g>
+      <circle cx="210" cy="78" r="13" fill="#F6C324" stroke="#10243A" stroke-width="3"/>
+      <text x="210" y="190" text-anchor="middle" fill="#fff" font-family="Big Shoulders Display, Arial Narrow, sans-serif" font-weight="800" font-size="26">Balneum</text>
+     </svg></div>
+     <div class="place-in"><h2>${t("where_h")}</h2><p class="lead" style="margin-top:12px">${t("where_t")}</p>
+      <dl><div><dt>${t("addr")}</dt><dd>Piazza Karl Riedmann 5 / Karl-Riedmann-Platz 5, 39049 Vipiteno / Sterzing</dd></div>
+      <div><dt>${t("phone")}</dt><dd><a class="link" href="tel:+393386002385">+39 338 600 2385</a><br><span class="muted">${t("phone_h")}</span></dd></div></dl>
+      <p style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-line btn-sm" href="https://www.google.com/maps/search/?api=1&query=46.893404,11.438446" target="_blank" rel="noopener">${t("maps")}</a><a class="btn btn-ghost btn-sm" href="${href("contact")}">${t("write")}</a></p></div></div>`;
+}
+const pageHead = (h1, lead) => `<section class="ph"><div class="wrap"><div class="crumb"><a href="${href("home")}">${t("home")}</a></div><h1>${h1}</h1>${lead?`<p class="lead">${lead}</p>`:""}</div></section>`;
+
+/* ---------- pages ---------- */
+const P = {};
+P.home = () => {
+  const up = COURSES.filter(c=>!c.voucher && nextDate(c)).sort((a,b)=>nextDate(a)-nextDate(b)||a.id.localeCompare(b.id));
+  const seen = new Set(), pick = [];
+  for (const c of up) { const k = c.lane+c.day; if (!seen.has(k)) { seen.add(k); pick.push(c); } if (pick.length===6) break; }
+  return `
+  <section class="deck"><div class="wrap"><h1 class="hero-h">${t("hero_h1")}</h1><p class="lead hero-sub">${t("hero_sub")}</p></div></section>
+  <section class="pool anim" aria-label="${t("pool_cap")}"><div class="wrap">
+    <div class="pool-cap"><span>${t("pool_cap")}</span><span>${t("pool_cap2")}</span></div>
+    <div class="rope" aria-hidden="true"></div>${lanes()}<div class="rope" aria-hidden="true"></div><div style="height:18px"></div></div></section>
+  <div class="facts-band"><div class="facts wrap"><div><b>${t("fact1")}</b>${t("fact1t")}</div><div><b>${t("fact2")}</b>${t("fact2t")}</div><div><b>${t("fact3")}</b>${t("fact3t")}</div><div><b>${t("fact4")}</b>${t("fact4t")}</div></div></div>
+  <section class="sec"><div class="wrap"><div class="sec-head"><div><h2>${t("courses_h")}</h2><p class="muted">${t("courses_sub")}</p></div><a class="btn btn-line" href="${href("courses")}">${t("all_courses")}</a></div>${heat(pick)}</div></section>
+  <section class="sec" style="background:var(--deck)"><div class="wrap split"><div><h2>${t("team_h")}</h2><p class="lead" style="margin-top:16px">${t("team_sub")}</p><p>${t("captains")}</p><a class="btn btn-line" href="${href("team")}">${t("team_cta")}</a></div>${board(RESULTS.slice(0,2))}</div></section>
+  <section class="sec"><div class="wrap"><div class="sec-head"><h2>${t("news_h")}</h2><a class="link" href="${href("news")}">${t("news_all")}</a></div>${newsList(NEWS.slice(0,3))}</div></section>
+  <section class="sec" style="padding-top:0"><div class="wrap">${place()}</div></section>`;
+};
+P.courses = () => {
+  const who = S.q.who||"all", day = S.q.day||"all";
+  const list = COURSES.filter(c => (who==="all"||c.lane===who) && (day==="all"||String(c.day)===day));
+  const chip = (k,v,label) => `<button class="chip" type="button" data-f="${k}" data-v="${v}" aria-pressed="${(k==="who"?who:day)===v}">${label}</button>`;
+  return pageHead(t("courses_h1"), t("courses_intro")) + `<section class="sec" style="padding-top:28px"><div class="wrap">
+   <div class="filters"><div class="chips"><span class="chips-l">${t("who")}</span>${chip("who","all",t("all"))}${LANES.filter(l=>l!=="team").map(l=>chip("who",l,t("sh_"+l))).join("")}</div>
+   <div class="chips"><span class="chips-l">${t("day")}</span>${chip("day","all",t("all"))}${[1,2,3,4,5,6].map(d=>chip("day",String(d),cap1(dayName(d,"short").replace(".","")))).join("")}</div></div>
+   ${list.length ? heat(list) : `<p>${t("none")}</p><button class="btn btn-line" type="button" data-act="reset">${t("reset")}</button>`}
+  </div></section>`;
+};
+P.school = () => pageHead(t("school_h1"), t("school_intro")) + `<section class="sec"><div class="wrap split">
+  <div><h2 style="margin-bottom:18px">${t("levels_h")}</h2><ol class="levels">${[1,2,3,4,5].map(i=>`<li><div><h3>${t("l"+i)}</h3><p class="muted">${t("l"+i+"t")}</p></div></li>`).join("")}</ol><p class="note">${t("lv_note")}</p></div>
+  <div><h2 style="margin-bottom:18px">${t("bring_h")}</h2><ul class="bring">${I18N[S.lang].bring.map(b=>`<li>${b}</li>`).join("")}</ul>
+   <h2 style="margin:44px 0 10px">${t("faq_h")}</h2>${[1,2,3].map(i=>`<details><summary>${t("q"+i)}</summary><p>${t("a"+i)}</p></details>`).join("")}
+   <p style="margin-top:28px"><a class="btn btn-go" href="${href("courses",{who:"kids"})}">${t("cta_book")}</a></p></div></div></section>`;
+P.team = () => {
+  const q = S.resQ.toLowerCase();
+  const res = RESULTS.filter(r => !q || (r.who+" "+tr(r.ev)+" "+tr(r.meet)).toLowerCase().includes(q));
+  return pageHead(t("team_h1"), t("team_intro")) + `<section class="sec"><div class="wrap split">
+   <div><h2>${t("team_h")}</h2><p class="lead" style="margin-top:16px">${t("team_sub")}</p><p>${t("captains")}</p>
+     <div class="panel" style="margin-top:28px"><h3>${t("join_h")}</h3><p class="muted">${t("join_t")}</p><a class="btn btn-go" href="${href("contact",{topic:"team"})}">${t("join_cta")}</a></div>
+     <p style="margin-top:18px"><a class="link" href="https://www.instagram.com/polisportiva.sterzing.swimteam/" target="_blank" rel="noopener">${t("ig")}</a></p></div>
+   <div><h2 style="font-size:2rem;margin-bottom:14px">${t("res_h")}</h2><label class="f" style="margin-bottom:14px"><span class="sr">${t("search")}</span><input class="inp" id="resq" type="search" placeholder="${t("search")}" value="${esc(S.resQ)}"></label><div id="resl">${res.length?board(res):`<p>${t("none")}</p>`}</div></div>
+  </div></section>`;
+};
+P.club = () => {
+  const f = S.staffF;
+  const match = p => f==="all" || (f==="coord"&&p[2].includes("C")) || (f==="coach"&&p[2].some(r=>r[0]==="A")) || (f==="fit"&&p[2].includes("F"));
+  const chip = (v,l) => `<button class="chip" type="button" data-staff="${v}" aria-pressed="${f===v}">${l}</button>`;
+  return pageHead(t("club_h1"), t("club_intro")) + `<section class="sec"><div class="wrap">
+   <div class="sec-head"><h2>${t("staff_h")}</h2><div class="chips">${chip("all",t("s_all"))}${chip("coord",t("s_coord"))}${chip("coach",t("s_coach"))}${chip("fit",t("s_fit"))}</div></div>
+   <div class="staff">${STAFF.filter(match).map(p=>`<div class="person"><div class="av" aria-hidden="true">${p[0][0]}${p[1][0]}</div><div><h3>${p[0]} ${p[1]}</h3><div class="roles">${p[2].map(r=>`<span class="tag">${t("r_"+r)}</span>`).join("")}</div></div></div>`).join("")}</div>
+  </div></section>
+  <section class="sec" id="sg" style="background:var(--deck)"><div class="wrap split"><div><h2>${t("sg_h")}</h2><p class="lead" style="margin-top:16px">${t("sg_t")}</p></div>
+   <div class="panel"><p class="muted" style="margin-bottom:4px">${t("sg_who")}</p><h3 style="font-size:1.4rem">Pierluigi Cola</h3><p><a class="link" href="mailto:safeguarding@polisportiva-avi.it">safeguarding@polisportiva-avi.it</a></p>
+   <p style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-go" href="${href("contact",{topic:"sg"})}">${t("sg_cta")}</a><button class="btn btn-line" type="button" data-act="doc">${t("sg_docs")}</button></p></div></div></section>
+  <section class="sec" id="tr"><div class="wrap"><h2>${t("tr_h")}</h2><p class="lead" style="margin:14px 0 22px">${t("tr_t")}</p>
+   <div class="t-wrap"><table class="t"><thead><tr><th>${t("tr_y")}</th><th>${t("tr_n")}</th><th>${t("tr_tot")}</th><th></th></tr></thead><tbody>
+   ${GRANTS.map(g=>`<tr><td class="tnum"><b>${g.y}</b></td><td>${g.n||"–"}</td><td class="tnum">${g.tot?eur(g.tot):"–"}</td><td>${g.pending?`<span class="pill rv">${t("tr_pend")}</span>`:g.pdf?`<button class="btn btn-ghost btn-sm" type="button" data-act="doc">${t("tr_pdf")}</button>`:`<span class="pill ok">${t("ok")}</span>`}</td></tr>`).join("")}
+   </tbody></table></div></div></section>`;
+};
+P.news = () => {
+  const f = S.newsF; const chip = (v,l) => `<button class="chip" type="button" data-news="${v}" aria-pressed="${f===v}">${l}</button>`;
+  return pageHead(t("news_h1")) + `<section class="sec" style="padding-top:28px"><div class="wrap"><div class="chips" style="margin-bottom:22px">${chip("all",t("all"))}${chip("team",t("c_team"))}${chip("courses",t("c_courses"))}${chip("club",t("c_club"))}</div>${newsList(NEWS.filter(n=>f==="all"||n.c===f))}</div></section>`;
+};
+P.contact = () => {
+  const topic = S.q.topic||"courses";
+  const o = (v,k) => `<option value="${v}" ${topic===v?"selected":""}>${t(k)}</option>`;
+  return pageHead(t("contact_h1"), t("contact_intro")) + `<section class="sec"><div class="wrap split">
+   <div>${place()}</div>
+   <form class="form panel" id="cform" novalidate><label class="f">${t("f_name")}<input class="inp" name="name" autocomplete="name" required></label>
+    <label class="f">${t("b_email")}<input class="inp" name="email" type="email" autocomplete="email" required></label>
+    <div class="form-2"><label class="f">${t("f_topic")}<select class="inp" name="topic">${o("courses","t_courses")}${o("team","t_team")}${o("sg","t_sg")}${o("other","t_other")}</select></label>
+    <label class="f">${t("b_lang")}<select class="inp" name="lang">${["it","de","en"].map(l=>`<option value="${l}" ${S.lang===l?"selected":""}>${I18N[l]._name}</option>`).join("")}</select></label></div>
+    <label class="f">${t("f_msg")}<textarea class="inp" name="msg" required></textarea></label>
+    <label class="check"><input type="checkbox" name="priv" required><span>${t("b_priv")}</span></label>
+    <p class="err" id="cerr" role="alert"></p><button class="btn btn-go" type="submit">${t("f_send")}</button></form></div></section>`;
+};
+
+/* ---------- admin ---------- */
+function easter(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return new Date(y,mo-1,da);}
+function holidays(y){const e=easter(y),add=n=>new Date(e.getFullYear(),e.getMonth(),e.getDate()+n);return [new Date(y,0,1),new Date(y,0,6),add(1),new Date(y,3,25),new Date(y,4,1),add(50),new Date(y,5,2),new Date(y,7,15),new Date(y,10,1),new Date(y,11,8),new Date(y,11,25),new Date(y,11,26)].map(d=>d.toDateString());}
+function genDates(start,n){const out=[],skip=[];let d=new Date(start);let guard=0;while(out.length<n&&guard<80){guard++;(holidays(d.getFullYear()).includes(d.toDateString())?skip:out).push(new Date(d));d.setDate(d.getDate()+7);}return {out,skip};}
+function checks(){
+  const seen = new Set(), out = [];
+  COURSES.forEach(c => c.dates.forEach(md => { const d = dObj(md); if (d.getDay()!==c.day) { const k = c.lane+c.day+md; if (!seen.has(k)) { seen.add(k); out.push(t("chk_date",{c:`${tr(c.name)} (${dayName(c.day)})`, d:fmtD(d), w:dayName(c.day)})); } } }));
+  return out;
+}
+P.admin = () => {
+  const A = S.adm, real = COURSES.filter(c=>!c.voucher);
+  const booked = real.reduce((s,c)=>s+c.booked,0), capT = real.reduce((s,c)=>s+c.cap,0), wait = real.reduce((s,c)=>s+c.wait,0), rev = real.reduce((s,c)=>s+c.booked*c.price,0);
+  const tab = (k,l) => `<button type="button" data-tab="${k}" aria-pressed="${A.tab===k}">${t(l)}</button>`;
+  let main = "";
+  if (A.tab==="ov") {
+    const occ = ["baby","kids","adults","fitness"].map(l=>{const cs=real.filter(c=>c.lane===l),b=cs.reduce((s,c)=>s+c.booked,0),cp=cs.reduce((s,c)=>s+c.cap,0),p=Math.round(b/cp*100);return `<div class="occ-row"><span>${t("sh_"+l)}</span><div class="bar" role="img" aria-label="${p}%"><i style="width:${p}%"></i></div><b class="tnum">${p}%</b></div>`;}).join("");
+    const ch = checks();
+    const regs = [["Sofia M.","k31","ok"],["Jonas P.","a4","ok"],["Anna K.","f3","pend"],["Luca R.","k10","ok"],["Lena W.","b2","pend"]];
+    main = `<div class="kpis"><div class="kpi"><b class="tnum">${booked}</b><span>${t("k1")}</span></div><div class="kpi"><b class="tnum">${Math.round(booked/capT*100)}%</b><span>${t("k2")}</span></div><div class="kpi"><b class="tnum">${wait}</b><span>${t("k3")}</span></div><div class="kpi"><b class="tnum">${eur(rev)}</b><span>${t("k4")}</span></div></div>
+     <div class="adm-grid"><div class="panel"><h3>${t("occ_h")}</h3><div class="occ">${occ}</div>
+       <h3 style="margin-top:26px">${t("reg_h")}</h3><div class="t-wrap"><table class="t"><thead><tr><th>${t("reg_who")}</th><th>${t("reg_course")}</th><th>${t("reg_pay")}</th></tr></thead><tbody>${regs.map(r=>{const c=COURSES.find(x=>x.id===r[1]);return `<tr><td>${r[0]}</td><td>${esc(tr(c.name))}<br><span class="muted" style="font-size:.88rem">${cap1(dayName(c.day))} ${c.time}</span></td><td><span class="pill ${r[2]==="ok"?"ok":"rv"}">${t(r[2]==="ok"?"paid":"pending")}</span></td></tr>`;}).join("")}</tbody></table></div></div>
+      <div style="display:grid;gap:22px;align-content:start"><div class="panel"><h3>${t("chk_h")}</h3>${ch.map(m=>`<div class="alert"><span class="dot"></span><span>${esc(m)}</span></div>`).join("")}<div class="alert"><span class="dot" style="background:var(--ok)"></span><span>${t("chk_ok")}</span></div></div>
+      <div class="panel"><h3>${t("task_h")}</h3>${["task1","task2","task3"].map(k=>`<div class="alert"><span class="dot y"></span><span>${t(k)}</span></div>`).join("")}</div></div></div>`;
+  } else if (A.tab==="courses") {
+    const g = A.gen;
+    main = `<div style="display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 22px"><button class="btn btn-go" type="button" data-act="newcourse">${t("c_new")}</button><button class="btn btn-line" type="button" data-act="dup">${t("c_dup")}</button></div>
+     <div class="panel" id="newc" style="margin-bottom:22px"><h3>${t("c_new")}</h3><p class="muted">${t("c_new_t")}</p>
+      <div class="form-2" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))"><label class="f">${t("c_type")}<select class="inp" id="g_type">${["kids","baby","adults","fitness"].map(l=>`<option value="${l}">${t("lane_"+l)}</option>`).join("")}</select></label>
+      <label class="f">${t("gen_from")}<input class="inp" id="g_from" type="date" value="${g?g.from:"2027-02-01"}"></label><label class="f">${t("gen_n")}<input class="inp" id="g_n" type="number" min="1" max="30" value="${g?g.n:12}"></label>
+      <label class="f">${t("c_cap")}<input class="inp" type="number" value="8"></label></div>
+      <p style="margin-top:14px"><button class="btn btn-line btn-sm" type="button" data-act="gen">${t("gen")}</button></p>
+      ${g?`<div class="dates">${g.out.map(d=>`<span>${fmtD(d)}</span>`).join("")}</div><p class="note">${g.skip.length?t("gen_skip",{d:g.skip.map(fmtD).join(", ")}):t("gen_none")}</p>`:""}</div>
+     <div class="t-wrap panel"><table class="t"><thead><tr><th>${t("col_course")}</th><th>${t("c_daytime")}</th><th>${t("c_cap")}</th><th>${t("c_book")}</th><th>${t("c_wait")}</th></tr></thead><tbody>
+     ${real.map(c=>`<tr><td>${esc(tr(c.name))}<br><span class="muted" style="font-size:.88rem">${esc(tr(c.age))}</span></td><td>${cap1(dayName(c.day))} ${c.time||"–"}</td><td class="tnum">${c.cap}</td><td class="tnum">${c.booked}</td><td class="tnum">${c.wait?`<span class="pill no">${c.wait}</span>`:"–"}</td></tr>`).join("")}</tbody></table></div>`;
+  } else if (A.tab==="comm") {
+    const grps = real.filter((c,i,a)=>a.findIndex(x=>x.lane===c.lane&&x.day===c.day)===i);
+    main = `<div class="adm-grid" style="margin-top:16px"><div class="panel"><h3>${t("comm_h")}</h3><div class="form">
+      <label class="f">${t("comm_g")}<select class="inp" id="grp"><option value="all">${t("comm_all")}</option>${grps.map(c=>`<option value="${c.lane}-${c.day}" ${A.grp===c.lane+"-"+c.day?"selected":""}>${esc(tr(c.name))}, ${dayName(c.day)}</option>`).join("")}</select></label>
+      <div><div class="tabs" role="group">${["it","de","en"].map(l=>`<button type="button" data-ml="${l}" aria-pressed="${A.ml===l}">${l.toUpperCase()}${A.msg[l]?"":" •"}</button>`).join("")}</div>
+      <textarea class="inp" id="msg" lang="${A.ml}" aria-label="${t("f_msg")} ${A.ml.toUpperCase()}">${esc(A.msg[A.ml])}</textarea></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-line btn-sm" type="button" data-act="autotr">${t("comm_tr")}</button><button class="btn btn-go btn-sm" type="button" data-act="send">${t("comm_send")}</button></div></div></div>
+      <div class="panel"><h3>${t("roles_h")}</h3><p class="muted">${t("roles_t")}</p></div></div>`;
+  } else {
+    const rows = [["Home","ok","ok","ok"],[t("nav_courses"),"ok","ok","ok"],[t("nav_school"),"ok","ok","rv"],[tr(NEWS[0].t),"ok","ok","miss"],[t("safeguarding"),"ok","ok","rv"],[t("terms"),"ok","rv","miss"]];
+    main = `<div class="panel" style="margin-top:16px"><h3>${t("ct_h")}</h3><div class="t-wrap"><table class="t"><thead><tr><th>${t("ct_page")}</th><th>IT</th><th>DE</th><th>EN</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r[0])}</td>${r.slice(1).map(s=>`<td><span class="pill ${s==="ok"?"ok":s==="rv"?"rv":"no"}">${t(s)}</span></td>`).join("")}</tr>`).join("")}</tbody></table></div></div>`;
+  }
+  return `<section class="ph" style="padding-bottom:24px"><div class="wrap"><div class="crumb"><a href="${href("home")}">${t("home")}</a></div><h1 style="font-size:clamp(2.4rem,6vw,4rem)">${t("a_title")}</h1><p class="muted" style="margin-top:10px"><span class="pill rv">${t("a_demo")}</span></p></div></section>
+   <div class="adm"><div class="adm-side" role="group" aria-label="${t("a_title")}">${tab("ov","a_ov")}${tab("courses","a_courses")}${tab("comm","a_comm")}${tab("content","a_content")}</div><div class="adm-main">${main}</div></div>`;
+};
+
+/* ---------- booking ---------- */
+function openBooking(id){
+  const c = COURSES.find(x=>x.id===id); if (!c) return;
+  S.b = {c, step:1, wait: free(c)<=0, d:{lang:S.lang, pay:"card", persons:"1", level:""}, err:{}};
+  openModal(); drawBooking();
+}
+function bSteps(){ return S.b.wait ? ["st1","st2","st3"] : ["st1","st2","st3","st4"]; }
+function bPrice(){ const c=S.b.c; return c.voucher ? [44,55,66][+S.b.d.persons-1] : c.price; }
+function field(name,label,type="text",extra=""){ const e=S.b.err[name]; return `<label class="f">${label}<input class="inp" name="${name}" type="${type}" value="${esc(S.b.d[name]||"")}" ${e?'aria-invalid="true"':''} ${extra}>${e?`<span class="err">${e}</span>`:""}</label>`; }
+function drawBooking(){
+  const B = S.b, c = B.c, steps = bSteps();
+  let body = "";
+  if (B.step==="done") {
+    const code = "AVI-26-"+(1000+Math.floor(Math.random()*9000));
+    body = `<div class="done-mark">${IC.check}</div><h2 id="dlgT" style="font-size:2.4rem">${B.wait?t("done_w"):t("done_t")}</h2><p class="lead" style="margin-top:12px">${t(B.wait?"done_pw":"done_p",{e:esc(B.d.email),c:code})}</p>
+      <div class="sumbox"><b>${esc(tr(c.name))}</b><br>${c.voucher?t("by_appt"):cap1(dayName(c.day))+" "+(c.time||t("time_tbd"))}<br><span class="muted">${esc(B.d.first)} ${esc(B.d.last)}</span></div>
+      <div class="dlg-actions">${B.wait?"":`<button class="btn btn-line" type="button" data-act="cal">${t("add_cal")}</button>`}<button class="btn btn-go" type="button" data-act="closemodal">${t("close")}</button></div>`;
+    $("#dlg").innerHTML = body; $("#dlgT").focus(); return;
+  }
+  const stepper = `<ol class="stepper">${steps.map((s,i)=>`<li class="${i+1===B.step?"on":i+1<B.step?"done":""}" ${i+1===B.step?'aria-current="step"':''}>${i+1}. ${t(s)}</li>`).join("")}</ol>`;
+  if (B.step===1) {
+    body = `<div class="sumbox"><h3 style="font-size:1.25rem">${esc(tr(c.name))}</h3><p style="margin:0">${c.voucher?t("by_appt"):`<b>${cap1(dayName(c.day))}</b> ${c.time||t("time_tbd")}`}<br><span class="muted">${esc(tr(c.age))}${c.voucher?", "+t("voucher"):", "+t(c.unit,{n:c.n})}</span></p>
+      ${c.dates.length?`<p style="margin:14px 0 0;font-weight:600">${t("b_dates")}</p><div class="dates">${c.dates.map(x=>`<span class="${dObj(x)<today?"past":""}">${fmtD(dObj(x))}</span>`).join("")}</div><p class="muted" style="margin:10px 0 0;font-size:.92rem">${t("b_left",{n:remaining(c)})}</p>`:""}</div>
+      ${c.voucher?`<label class="f" style="margin-top:16px">${t("persons")}<select class="inp" name="persons">${[1,2,3].map(n=>`<option value="${n}" ${B.d.persons==n?"selected":""}>${t("p"+n)}, ${eur([44,55,66][n-1])}</option>`).join("")}</select></label>`:""}
+      ${B.wait?`<p class="warn" style="margin-top:16px">${t("wait_note")}</p>`:`<p style="margin-top:16px;font-size:1.1rem">${t("b_total")}: <b class="tnum">${eur(bPrice())}</b></p>`}`;
+  } else if (B.step===2) {
+    const age = ageWarn();
+    body = `<div class="form"><div class="form-2">${field("first",t("b_first"),"text",'autocomplete="given-name"')}${field("last",t("b_last"),"text",'autocomplete="family-name"')}</div>
+      ${field("birth",t("b_birth"),"date")}${age?`<p class="warn">${age}</p>`:""}
+      <label class="f">${t("b_level")}<select class="inp" name="level">${["","lvl1","lvl2","lvl3","lvl4"].map(k=>`<option value="${k}" ${B.d.level===k?"selected":""}>${k?t(k):"–"}</option>`).join("")}</select></label>
+      <label class="f">${t("b_notes")}<span class="h">${t("b_notes_h")}</span><textarea class="inp" name="notes">${esc(B.d.notes||"")}</textarea></label></div>`;
+  } else if (B.step===3) {
+    body = `<div class="form">${field("payer",t("b_payer"),"text",'autocomplete="name"')}<div class="form-2">${field("email",t("b_email"),"email",'autocomplete="email"')}${field("tel",t("b_tel"),"tel",'autocomplete="tel"')}</div>
+      <label class="f">${t("b_lang")}<select class="inp" name="lang">${["it","de","en"].map(l=>`<option value="${l}" ${B.d.lang===l?"selected":""}>${I18N[l]._name}</option>`).join("")}</select></label>
+      <label class="check"><input type="checkbox" name="priv" ${B.d.priv?"checked":""}><span>${t("b_priv")}</span></label>${B.err.priv?`<span class="err">${B.err.priv}</span>`:""}
+      <label class="check"><input type="checkbox" name="photo" ${B.d.photo?"checked":""}><span>${t("b_photo")}</span></label></div>`;
+  } else if (B.step===4) {
+    body = `<p style="font-weight:600;margin-bottom:10px">${t("b_pay")}</p><div class="pay" role="radiogroup">${["card","pp","sp","bt"].map(p=>`<label><input type="radio" name="pay" value="${p}" ${B.d.pay===p?"checked":""}>${t("pay_"+(p==="card"?"card":p))}</label>`).join("")}</div>
+      <div class="sumbox" style="margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:12px"><span>${esc(tr(c.name))}<br><span class="muted">${esc(B.d.first)} ${esc(B.d.last)}</span></span><b class="c-price tnum">${eur(bPrice())}</b></div>`;
+  }
+  const last = B.step===steps.length;
+  const nextLbl = last ? (B.wait?t("join_wait"):t("pay_now")) : t("next");
+  $("#dlg").innerHTML = `<div class="dlg-top"><h2 id="dlgT" tabindex="-1">${B.wait?t("waitlist"):t("b_title")}</h2><button class="x" type="button" data-act="closemodal" aria-label="${t("close")}">${IC.x}</button></div>${stepper}${body}
+    <div class="dlg-actions">${B.step>1?`<button class="btn btn-line" type="button" data-act="bback">${t("back")}</button>`:"<span></span>"}<button class="btn ${B.wait&&last?"btn-wait":"btn-go"}" type="button" data-act="bnext">${nextLbl}</button></div>`;
+  const inv = $("#dlg [aria-invalid='true']"); (inv||$("#dlgT")).focus();
+}
+function ageWarn(){
+  const B=S.b, c=B.c; if (!c.ages || !B.d.birth) return "";
+  const b = new Date(B.d.birth), ref = c.dates.length ? dObj(c.dates[0]) : today; if (isNaN(b)) return "";
+  let a = ref.getFullYear()-b.getFullYear(); if (ref < new Date(ref.getFullYear(), b.getMonth(), b.getDate())) a--;
+  return (a < c.ages[0] || a > c.ages[1]) ? t("age_warn",{a:tr(c.age)}) : "";
+}
+function validate(){
+  const B=S.b, d=B.d, e={};
+  if (B.step===2) { ["first","last","birth"].forEach(k=>{ if(!String(d[k]||"").trim()) e[k]=t("req"); }); }
+  if (B.step===3) { if(!String(d.payer||"").trim()) e.payer=t("req"); if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email||"")) e.email=t("bad_email"); if(!String(d.tel||"").trim()) e.tel=t("req"); if(!d.priv) e.priv=t("req"); }
+  B.err = e; return !Object.keys(e).length;
+}
+
+/* ---------- modal + toast ---------- */
+let lastFocus = null;
+function openModal(){ lastFocus = document.activeElement; $("#modal").classList.add("open"); document.body.style.overflow="hidden"; }
+function closeModal(){ $("#modal").classList.remove("open"); document.body.style.overflow=""; S.b=null; if (lastFocus) lastFocus.focus(); }
+function famModal(){ openModal(); $("#dlg").innerHTML = `<div class="dlg-top"><h2 id="dlgT" tabindex="-1">${t("fam_t")}</h2><button class="x" type="button" data-act="closemodal" aria-label="${t("close")}">${IC.x}</button></div><p class="lead">${t("fam_p")}</p><ul>${[1,2,3,4].map(i=>`<li style="margin-bottom:8px">${t("fam_"+i)}</li>`).join("")}</ul><div class="dlg-actions"><span></span><button class="btn btn-go" type="button" data-act="closemodal">${t("fam_ok")}</button></div>`; $("#dlgT").focus(); }
+let tt; function toast(m){ const el=$("#toast"); el.textContent=m; el.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>el.classList.remove("show"),3800); }
+
+/* ---------- render ---------- */
+const TITLES = {home:"hero_h1",courses:"courses_h1",school:"school_h1",team:"team_h1",club:"club_h1",news:"news_h1",contact:"contact_h1",admin:"a_title"};
+function render(){
+  parse(); store.set("avi-lang", S.lang);
+  document.documentElement.lang = S.lang;
+  header(); $("#main").innerHTML = (P[S.route]||P.home)(); footer();
+  document.title = (S.route==="home" ? "Polisportiva A.V.I. – " + t("fact1") : t(TITLES[S.route]) + " – Polisportiva A.V.I.");
+  cookie();
+}
+function cookie(){
+  const el = $("#cookie");
+  if (store.get("avi-cookie")) { el.innerHTML=""; return; }
+  el.innerHTML = `<div class="cookie" role="region" aria-label="Cookie"><p>${t("cookie_t")}</p><button class="btn btn-line btn-sm" type="button" data-act="ck">${t("cookie_no")}</button><button class="btn btn-go btn-sm" type="button" data-act="ck">${t("cookie_ok")}</button></div>`;
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click", e => {
+  const el = e.target.closest("[data-lang],[data-act],[data-book],[data-f],[data-staff],[data-news],[data-tab],[data-ml]"); if (!el) return;
+  if (el.dataset.lang) { const nl = el.dataset.lang; const key = S.route; S.lang = nl; store.set("avi-lang", nl); const q = location.hash.split("?")[1]; go("#/"+nl+"/"+SLUGS[nl][key]+(q?"?"+q:"")); return; }
+  if (el.dataset.book) { openBooking(el.dataset.book); return; }
+  if (el.dataset.f) { const q = {...S.q, [el.dataset.f]: el.dataset.v}; Object.keys(q).forEach(k=>q[k]==="all"&&delete q[k]); go(href("courses", Object.keys(q).length?q:undefined)); return; }
+  if (el.dataset.staff) { S.staffF = el.dataset.staff; $("#main").innerHTML = P.club(); return; }
+  if (el.dataset.news) { S.newsF = el.dataset.news; $("#main").innerHTML = P.news(); return; }
+  if (el.dataset.tab) { S.adm.tab = el.dataset.tab; $("#main").innerHTML = P.admin(); return; }
+  if (el.dataset.ml) { S.adm.ml = el.dataset.ml; $("#main").innerHTML = P.admin(); $("#msg").focus(); return; }
+  const a = el.dataset.act;
+  if (a==="menu") { $("#sheet").classList.add("open"); el.setAttribute("aria-expanded","true"); $("#sheet .x").focus(); }
+  if (a==="closemenu") { $("#sheet").classList.remove("open"); }
+  if (a==="fam") { $("#sheet").classList.remove("open"); famModal(); }
+  if (a==="closemodal") closeModal();
+  if (a==="reset") go(href("courses"));
+  if (a==="doc") { e.preventDefault(); toast(t("docs_soon")); }
+  if (a==="ck") { store.set("avi-cookie","1"); $("#cookie").innerHTML=""; }
+  if (a==="cal") toast(t("cal_toast"));
+  if (a==="bback") { S.b.step--; S.b.err={}; drawBooking(); }
+  if (a==="bnext") { if (!validate()) { drawBooking(); return; } if (S.b.step===bSteps().length) { if (!S.b.wait) S.b.c.booked++; else S.b.c.wait++; S.b.step="done"; } else S.b.step++; drawBooking(); }
+  if (a==="dup") toast(t("c_dup_t"));
+  if (a==="newcourse") { $("#newc").scrollIntoView({behavior:"smooth",block:"start"}); $("#g_type").focus(); }
+  if (a==="gen") { const from=$("#g_from").value||"2027-02-01", n=Math.max(1,Math.min(30,+$("#g_n").value||12)); const [y,m,d]=from.split("-").map(Number); S.adm.gen={from,n,...genDates(new Date(y,m-1,d),n)}; $("#main").innerHTML=P.admin(); }
+  if (a==="autotr") { ["it","de","en"].forEach(l=>{ if(!S.adm.msg[l].trim()) S.adm.msg[l]=I18N[l].comm_ex; }); $("#main").innerHTML=P.admin(); toast(t("comm_trd")); }
+  if (a==="send") { const g=S.adm.grp; const n = COURSES.filter(c=>!c.voucher && (g==="all" || c.lane+"-"+c.day===g)).reduce((s,c)=>s+c.booked,0); toast(t("comm_sent",{n})); }
+});
+document.addEventListener("input", e => {
+  const el = e.target;
+  if (S.b && el.closest("#dlg") && el.name) { S.b.d[el.name] = el.type==="checkbox" ? el.checked : el.value; if (el.name==="persons") drawBooking(); if (el.name==="birth" && S.b.step===2) { const w=ageWarn(), cur=$("#dlg .warn"); if (w && !cur) { el.closest("label").insertAdjacentHTML("afterend",`<p class="warn">${w}</p>`); } else if (!w && cur) cur.remove(); } }
+  if (el.id==="resq") { S.resQ = el.value; const q=el.value.toLowerCase(); const res=RESULTS.filter(r=>!q||(r.who+" "+tr(r.ev)+" "+tr(r.meet)).toLowerCase().includes(q)); $("#resl").innerHTML = res.length?board(res):`<p>${t("none")}</p>`; }
+  if (el.id==="msg") S.adm.msg[S.adm.ml] = el.value;
+  if (el.id==="grp") S.adm.grp = el.value;
+});
+document.addEventListener("change", e => { if (e.target.id==="grp") S.adm.grp = e.target.value; if (S.b && e.target.closest("#dlg") && e.target.type==="radio") S.b.d[e.target.name]=e.target.value; });
+document.addEventListener("submit", e => {
+  if (e.target.id !== "cform") return; e.preventDefault(); const f = e.target, err = $("#cerr");
+  const bad = [...f.querySelectorAll("[required]")].filter(x => x.type==="checkbox" ? !x.checked : !x.value.trim() || (x.type==="email" && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(x.value)));
+  f.querySelectorAll(".inp").forEach(x=>x.removeAttribute("aria-invalid")); bad.forEach(x=>x.setAttribute("aria-invalid","true"));
+  if (bad.length) { err.textContent = t("req"); bad[0].focus(); return; }
+  err.textContent = ""; f.reset(); toast(t("sent"));
+});
+document.addEventListener("keydown", e => { if (e.key==="Escape") { if ($("#modal").classList.contains("open")) closeModal(); $("#sheet").classList.remove("open"); } });
+$("#modal").addEventListener("click", e => { if (e.target.id==="modal") closeModal(); });
+window.addEventListener("hashchange", () => { render(); window.scrollTo(0,0); $("#sheet").classList.remove("open"); });
+render();
+
+</script>
+</body>
+</html>
